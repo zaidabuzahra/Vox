@@ -48,7 +48,6 @@ public class PlayerMovementController : MonoBehaviour
 
             if (cameraForward != Vector3.zero)
             {
-                Debug.Log("All good...");
                 Quaternion newRotation = Quaternion.LookRotation(cameraForward);
                 transform.rotation = newRotation;
             }
