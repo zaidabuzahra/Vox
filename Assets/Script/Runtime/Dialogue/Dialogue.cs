@@ -1,57 +1,53 @@
-using Runtime;
-using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
-public class Dialogue : MonoBehaviour
+[CreateAssetMenu(fileName = "New Dialogue", menuName = "Dialogue/New")]
+public class Dialogue : ScriptableObject
 {
-    enum DialogueActivatioType
-    {
-        Trigger,
-        SolvePuzzle,
-        DialogueChoice
-    }
+    [Header("Basic Info")]
+    public string title;
+    public DialogueActivationType activationType;
+    public DialoguePriority priority;
 
-    [SerializeField] private DialogueActivatioType activationType;
-
-    public float duration;
+    [Header("Content")]
     public AudioClip dialogueClip;
-    public string[] captions;
-    public float[] captionDelay;
+    [TextArea(3, 5)] public string[] captions;
+    public float[] captionDelays;
+    public float expectedDuration;
 
+    [Header("Responses")]
     public bool canRespond;
-    private bool showResponses;
-    [HideInInspector] public float responseDelay;
-    [HideInInspector] public int responseCount;
-    [HideInInspector] public Dialogue[] responses;
 
-    [HideInInspector] public GameObject puzzle;
+    [HideInInspector] public float responseDelay;
+    [HideInInspector, Range(0, 3)] public int responseCount;
+    [HideInInspector] public Dialogue[] responses = new Dialogue[3];
 
     #region Editor
 #if UNITY_EDITOR
     [CustomEditor(typeof(Dialogue))]
     public class DialogueEditor : Editor
     {
+        private bool showResponses;
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
             Dialogue dialogue = (Dialogue)target;
-            if (dialogue.activationType == DialogueActivatioType.SolvePuzzle)
-            {
-                dialogue.puzzle = EditorGUILayout.ObjectField("Puzzle : ", dialogue.puzzle, typeof(GameObject), true) as GameObject;
-            }
             if (dialogue.canRespond)
             {
-                dialogue.showResponses = EditorGUILayout.Foldout(dialogue.showResponses, "Responses");
-                if (dialogue.showResponses)
+                showResponses = EditorGUILayout.Foldout(showResponses, "Responses");
+                if (showResponses)
                 {
                     EditorGUI.indentLevel++;
                     dialogue.responseCount = EditorGUILayout.IntField("Response Count", dialogue.responseCount);
                     dialogue.responseDelay = EditorGUILayout.FloatField("Response Delay", dialogue.responseDelay);
-                    dialogue.responses = new Dialogue[dialogue.responseCount];
-                    for (int i = 0; i < dialogue.responses.Length; i++)
+                    if (dialogue.responses == null || dialogue.responses.Length != dialogue.responseCount)
                     {
-                        dialogue.responses[i] = (Dialogue)EditorGUILayout.ObjectField("Response " + i, dialogue.responses[i], typeof(Dialogue), true);
+                        System.Array.Resize(ref dialogue.responses, dialogue.responseCount);
+                    }
+
+                    for (int i = 0; i < dialogue.responseCount; i++)
+                    {
+                        dialogue.responses[i] = (Dialogue)EditorGUILayout.ObjectField($"Response {i + 1}", dialogue.responses[i], typeof(Dialogue), true);
                     }
                     EditorGUI.indentLevel--;
                 }
@@ -60,21 +56,16 @@ public class Dialogue : MonoBehaviour
     }
 #endif
     #endregion
-    private void OnTriggerEnter(Collider other)
-    {
-        if (activationType == DialogueActivatioType.Trigger)
-        {
-            if (other.CompareTag("Player"))
-            {
-                DialogueManager.Instance.StartDialogue(this);
-            }
-        }
-    }
-    private void Start()
-    {
-        if (activationType == DialogueActivatioType.SolvePuzzle)
-        {
-            //puzzle.SetActive(false);
-        }
-    }
+}
+
+public enum DialogueActivationType
+{
+    Trigger,
+    SolvePuzzle,
+    DialogueChoice
+}
+public enum DialoguePriority
+{
+    Low,
+    High
 }

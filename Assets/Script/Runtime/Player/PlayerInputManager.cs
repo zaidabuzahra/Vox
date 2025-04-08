@@ -16,4 +16,25 @@ public class PlayerInputManager : MonoBehaviour
     {
         if (context.performed) { InputSignals.Instance.OnInputInteractPressed?.Invoke(); }
     }
+    public void OnScrolling(InputAction.CallbackContext context)
+    {
+        if (context.performed) { InputSignals.Instance.OnInputScrolling?.Invoke(context.ReadValue<float>()); }
+    }
+    public void OnOnePressed(InputAction.CallbackContext context)
+    {
+        if (context.performed) { InputSignals.Instance.OnChooseNumber?.Invoke(1); }
+    }
+    public void OnTwoPressed(InputAction.CallbackContext context)
+    {
+        if (context.performed) { InputSignals.Instance.OnChooseNumber?.Invoke(2); }
+    }
+    public void OnThreePressed(InputAction.CallbackContext context)
+    {
+        if (context.performed) { InputSignals.Instance.OnChooseNumber?.Invoke(3); }
+    }
+    public void OnOpenDialogueBox(InputAction.CallbackContext context)
+    {
+        if (context.performed) { InputSignals.Instance.OnOpenDialogueOptions?.Invoke(); }
+        else if (context.canceled) { InputSignals.Instance.OnCloseDialogueOptions?.Invoke(); }
+    }
 }
