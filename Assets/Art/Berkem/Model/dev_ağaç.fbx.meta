@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Cylinder
+    second: {fileID: 2100000, guid: a0f095a749fc0064191c21cd401cae1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: branch_bigtrree
     second: {fileID: 2100000, guid: 5794a43551df7a84dba689dce630dde8, type: 2}
   materials:
