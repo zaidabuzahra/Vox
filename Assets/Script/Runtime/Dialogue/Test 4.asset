@@ -10,23 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
-  m_Name: Test
+  m_Name: Test 4
   m_EditorClassIdentifier: 
   title: test
   activationType: 0
-  priority: 0
+  priority: 1
   dialogueClip: {fileID: 0}
   captions:
-  - AHAHAJHA
-  - Second
+  - "YOU GOT INTERRUPTED\t"
+  - FUCK YOU BITCH
   captionDelays:
   - 2
   - 3
   expectedDuration: 0
-  canRespond: 1
+  canRespond: 0
   responseDelay: 1
-  responseCount: 3
-  responses:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  responseCount: 0
+  responses: []

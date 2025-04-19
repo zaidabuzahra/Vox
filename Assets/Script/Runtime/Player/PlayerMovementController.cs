@@ -1,5 +1,6 @@
 using TMPro.EditorUtilities;
 using Unity.Cinemachine;
+using UnityEditor;
 using UnityEngine;
 
 //Responsible for controlling player's movement using Unity's CharacterController component.
