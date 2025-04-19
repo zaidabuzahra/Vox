@@ -1,0 +1,270 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2927860410645796429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2140680928176424092}
+  m_Layer: 0
+  m_Name: "Mutsuz Cal\u0131"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2140680928176424092
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2927860410645796429}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 432.0279, y: 13.606914, z: 310.89728}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5504254682059556253}
+  - {fileID: 5835659451899871945}
+  - {fileID: 1210766277171734927}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2675432713271531111
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2140680928176424092}
+    m_Modifications:
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 20.500002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 20.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 20.499998
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.32788086
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.7669134
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.2972717
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.5937976
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.40278727
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5764355
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.39101014
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -68.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -271.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9121678302519922196, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_Name
+      value: Mutsuz Agac (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b21b57f201ceca143830724e6598f659, type: 3}
+--- !u!4 &5835659451899871945 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+  m_PrefabInstance: {fileID: 2675432713271531111}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4160882688612766003
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2140680928176424092}
+    m_Modifications:
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 31.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 31.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 31.099998
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.1694946
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.7720242
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.611969
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.05548865
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.055469286
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.70505005
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.704804
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -171
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9121678302519922196, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_Name
+      value: Mutsuz Agac (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b21b57f201ceca143830724e6598f659, type: 3}
+--- !u!4 &5504254682059556253 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+  m_PrefabInstance: {fileID: 4160882688612766003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7282574830991392033
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2140680928176424092}
+    m_Modifications:
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 20.500002
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 20.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 20.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.1421204
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.1969137
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.4572754
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.8228081
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.55813056
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.08865888
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.060139462
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -68.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -372.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9121678302519922196, guid: b21b57f201ceca143830724e6598f659, type: 3}
+      propertyPath: m_Name
+      value: Mutsuz Agac (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b21b57f201ceca143830724e6598f659, type: 3}
+--- !u!4 &1210766277171734927 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8493057425562588334, guid: b21b57f201ceca143830724e6598f659, type: 3}
+  m_PrefabInstance: {fileID: 7282574830991392033}
+  m_PrefabAsset: {fileID: 0}
