@@ -65,8 +65,9 @@ public class UIDialogueController : MonoBehaviour
     {
         dialogueOptionsPanel.SetActive(false);
 
-        for (int i = 0; i < _dialogueIndex; i++)
+        for (int i = 0; i < 3; i++)
         {
+            if (i >= _dialogueIndex) break;
             dialogueOptions[i].gameObject.SetActive(true);
         }
 
@@ -137,8 +138,9 @@ public class UIDialogueController : MonoBehaviour
 
     private void HideOptions()
     {
-        for (int i = 0; i < _dialogueIndex; i++)
+        for (int i = 0; i < 3; i++)
         {
+            if (i >= _dialogueIndex) break;
             dialogueOptions[i].gameObject.SetActive(false);
         }
 

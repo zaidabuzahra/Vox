@@ -11,6 +11,7 @@ namespace Runtime
 
         [SerializeField] private UIDialogueController uiDialogueController;
 
+        private float _dialogueTimer;
         private AudioSource _audioSource;
         private Coroutine _currentCoroutine;
         private readonly Queue<Dialogue> _dialogueQueue = new();
@@ -21,7 +22,19 @@ namespace Runtime
         {
             _audioSource = GetComponent<AudioSource>();
         }
-
+        private void Update()
+        {
+            if (currentDialogue != null)
+            {
+                _dialogueTimer -= Time.deltaTime;
+                if (_dialogueTimer <= 0 && !currentDialogue.canSkip)
+                {
+                    RequestPlayDialogue(currentDialogue.responses[currentDialogue.responses.Length - 1]);
+                    Debug.Log("WOWOOWOWOWOW");
+                    currentDialogue.canSkip = true;
+                }
+            }
+        }
         public void RequestPlayDialogue(Dialogue dialogue)
         {
             Debug.Log("Requesting...");
@@ -38,17 +51,18 @@ namespace Runtime
                     return;
                 }
             }
-
             PlayDialogue(dialogue);
         }
 
         private void PlayDialogue(Dialogue dialogue)
         {
             Debug.Log("Playing...");
+
+            _dialogueTimer = dialogue.expectedDuration;
             uiDialogueController.UIEndOptions();
             currentDialogue = dialogue;
-            _audioSource.clip = dialogue.dialogueClip;
-            _audioSource.Play();
+            //_audioSource.clip = dialogue.dialogueClip;
+            //_audioSource.Play();
             _dialogueActive = true;
 
             if (_currentCoroutine != null)

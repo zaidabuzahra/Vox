@@ -4,6 +4,10 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     [SerializeField] private Dialogue dialogue;
+    private void Start()
+    {
+        DialogueManager.Instance.RequestPlayDialogue(dialogue);
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (dialogue.activationType != DialogueActivationType.Trigger) return;
