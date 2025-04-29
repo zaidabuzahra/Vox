@@ -10,7 +10,7 @@ public class ChargeObject : MonoBehaviour
 
     public float dischargeRate;
 
-    public UnityEvent[] events;
+    public UnityEvent events;
 
     private bool _isCharging;
 
@@ -28,17 +28,12 @@ public class ChargeObject : MonoBehaviour
     public void Charge()
     {
         _isCharging = true;
-        if (currentCharge < neededCharge)
+
+        currentCharge += Time.deltaTime * dischargeRate;
+        if (currentCharge >= neededCharge)
         {
-            currentCharge += Time.deltaTime * dischargeRate;
-            if (currentCharge >= neededCharge)
-            {
-                currentCharge = neededCharge;
-                foreach (UnityEvent e in events)
-                {
-                    e.Invoke();
-                }
-            }
+            currentCharge = neededCharge;
+            events.Invoke();
         }
     }
 }
