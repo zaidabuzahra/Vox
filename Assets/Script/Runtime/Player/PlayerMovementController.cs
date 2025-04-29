@@ -20,6 +20,7 @@ public class PlayerMovementController : MonoBehaviour
 
     private void Awake()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         _controller = GetComponent<CharacterController>();
     }
     private void Update()

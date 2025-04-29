@@ -76,6 +76,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "SwitchUtilityRight",
+                    "type": "Button",
+                    "id": "179755f6-196e-4d24-be3c-3be1bb4e45cf",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "SwitchUtilityLeft",
+                    "type": "Button",
+                    "id": "0d3f3d00-9266-44be-ade5-8366879641ba",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -208,6 +226,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "91a894eb-841c-43f2-949a-710630811eb2",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchUtilityRight",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "96db9b40-ab25-4c83-b847-2c1cc040616e",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwitchUtilityLeft",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

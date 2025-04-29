@@ -20,7 +20,7 @@ public class Dialogue : ScriptableObject
     public bool canSkip;
 
     [HideInInspector] public float responseDelay;
-    [HideInInspector, Range(0, 3)] public int responseCount;
+    [HideInInspector] public int responseCount;
     [HideInInspector] public Dialogue[] responses = new Dialogue[3];
 
     #region Editor
