@@ -107,8 +107,7 @@ public class GunManager : MonoBehaviour
             if (_currentUtility != null)
             {
                 _currentUtility.Unequip();
-                _currentUtility.gameObject.transform.DOLocalRotate(new Vector3(_currentUtility.gameObject.transform.localEulerAngles.x, 
-                    _currentUtility.gameObject.transform.localEulerAngles.y, _currentUtility.gameObject.transform.localEulerAngles.z + 90 * i), 0.5f);
+                transform.DOLocalRotate(new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, transform.localEulerAngles.z + 90 * i), 0.5f);
             }
             StartCoroutine(AssignUtility());
         }
@@ -126,7 +125,11 @@ public class GunManager : MonoBehaviour
 
     private void UseUtility()
     {
-        if (_currentUtility == null || !_canUseUtility) return;
+        if (_currentUtility == null || !_canUseUtility)
+        {
+            Debug.Log("HUUUUUUUUUUUUH");
+            return;
+        }
         _currentUtility.UseUtility();
     }
 
