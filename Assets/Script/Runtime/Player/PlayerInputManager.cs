@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 //Responsible for handling player input and sending it to the appropriate system. (e.g. ui input, player movement input, gun switching input, etc.)
@@ -36,5 +37,22 @@ public class PlayerInputManager : MonoBehaviour
     {
         if (context.performed) { InputSignals.Instance.OnOpenDialogueOptions?.Invoke(); }
         else if (context.canceled) { InputSignals.Instance.OnCloseDialogueOptions?.Invoke(); }
+    }
+    public void OnUseUtilityPressed(InputAction.CallbackContext context)
+    {
+        if (context.performed) { InputSignals.Instance.OnUseUtilityPressed?.Invoke(); }
+        if (context.canceled) { InputSignals.Instance.OnUseUtilityCancelled?.Invoke(); }
+    }
+    public void OnSwitchUtilityRight(InputAction.CallbackContext context)
+    {
+        if (context.performed) { InputSignals.Instance.OnSwitchUtility?.Invoke(1); }
+    }
+    public void OnSwitchUtilityLeft(InputAction.CallbackContext context)
+    {
+        if (context.performed) { InputSignals.Instance.OnSwitchUtility?.Invoke(-1); }
+    }
+    public void OnJumpPressed(InputAction.CallbackContext context)
+    {
+        if (context.performed) { InputSignals.Instance.OnInputJumpPressed?.Invoke(); }
     }
 }

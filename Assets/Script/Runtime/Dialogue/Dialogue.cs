@@ -14,12 +14,13 @@ public class Dialogue : ScriptableObject
     [TextArea(3, 5)] public string[] captions;
     public float[] captionDelays;
     public float expectedDuration;
-
+    
     [Header("Responses")]
     public bool canRespond;
+    public bool canSkip;
 
     [HideInInspector] public float responseDelay;
-    [HideInInspector, Range(0, 3)] public int responseCount;
+    [HideInInspector] public int responseCount;
     [HideInInspector] public Dialogue[] responses = new Dialogue[3];
 
     #region Editor

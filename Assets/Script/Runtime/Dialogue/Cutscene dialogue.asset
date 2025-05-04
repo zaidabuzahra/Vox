@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: Cutscene dialogue
+  m_EditorClassIdentifier: 
+  title: test
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 0}
+  captions:
+  - "....\t"
+  - Can you hear me? Hello?
+  - Come on... wake up!
+  captionDelays:
+  - 2
+  - 3
+  - 3
+  expectedDuration: 18
+  canRespond: 1
+  canSkip: 0
+  responseDelay: 3
+  responseCount: 3
+  responses:
+  - {fileID: 11400000, guid: 46b33a97aa32c594cb28c2c5dbe6db5e, type: 2}
+  - {fileID: 11400000, guid: 1f47b35e980e4fb4f9eb66d710dccafc, type: 2}
+  - {fileID: 11400000, guid: 6cf4bef2b8a92f9438cf65d3910135bf, type: 2}

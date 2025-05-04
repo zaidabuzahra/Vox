@@ -1,5 +1,5 @@
-using TMPro.EditorUtilities;
 using Unity.Cinemachine;
+using UnityEditor;
 using UnityEngine;
 
 //Responsible for controlling player's movement using Unity's CharacterController component.
@@ -20,6 +20,7 @@ public class PlayerMovementController : MonoBehaviour
 
     private void Awake()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         _controller = GetComponent<CharacterController>();
     }
     private void Update()
