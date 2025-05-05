@@ -8,8 +8,11 @@ namespace Runtime.Player.Gun
         public string utilityDescription;
         public Sprite utilityIcon;
 
+        public Animator animator;
         public bool isActive;
         public bool stopUtility;
+
+        public float utilityCharge;
 
         public abstract void UseUtility();
         public abstract void StopUtility();

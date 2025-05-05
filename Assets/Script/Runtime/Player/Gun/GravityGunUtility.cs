@@ -6,7 +6,6 @@ public class GravityGunUtility : IUtility
 {
     // Utility properties
     // Utility methods
-    public Animator animator;
     public Transform holdArea;
     public GameObject heldObject;
     public Rigidbody heldObjectRb;

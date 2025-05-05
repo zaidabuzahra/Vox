@@ -77,7 +77,10 @@ public class GunManager : MonoBehaviour
                 _utilityShut = false;
             }
         }
-
+        if (_currentUtility != null)
+        {
+            _currentUtility.utilityCharge = utilitySlider.value;
+        }
         utilitySlider.value = _utilityCharge / 100;
     }
     private void SwitchUtility(int i)
@@ -97,6 +100,7 @@ public class GunManager : MonoBehaviour
         if (tempIndex == _currentUtilityIndex)
         {
             Debug.LogWarning("No utility to switch to");
+            _canUseUtility = false;
             return;
         }
 
@@ -127,7 +131,7 @@ public class GunManager : MonoBehaviour
     {
         if (_currentUtility == null || !_canUseUtility)
         {
-            Debug.Log("HUUUUUUUUUUUUH");
+            Debug.Log("Can't use utility");
             return;
         }
         _currentUtility.UseUtility();
