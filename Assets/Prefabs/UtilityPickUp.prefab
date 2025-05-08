@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2881020903112232020}
   - component: {fileID: 5344518628717968707}
   - component: {fileID: 4751564035466739199}
+  - component: {fileID: 6483736884091554681}
   m_Layer: 0
   m_Name: UtilityPickUp
   m_TagString: Untagged
@@ -66,5 +67,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1adb8b3066b47d43ac1106d84beb717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  utility: {fileID: 0}
-  gunManager: {fileID: 0}
+  utility: {fileID: 8885805854691222092, guid: 8930de2d795995d498f09fd0afb3153d, type: 3}
+--- !u!114 &6483736884091554681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4006730583428411446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a22bc1667c3cac4684790a1335ad42e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4751564035466739199}
+        m_TargetAssemblyTypeName: Runtime.Player.Gun.UtilityPickUp, Assembly-CSharp
+        m_MethodName: PickUpUtility
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
