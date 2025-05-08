@@ -70,14 +70,12 @@ public class PlayerMovementController : MonoBehaviour
     {
         InputSignals.Instance.OnInputMoveUpdate += MovementInputUpdate;
         InputSignals.Instance.OnInputeLookUpdate += LookInputUpdate;
-        InputSignals.Instance.OnInputInteractPressed += InteractInputUpdate;
     }
     private void OnDisable()
     {
         if (InputSignals.Instance == null) { return; }
         InputSignals.Instance.OnInputMoveUpdate -= MovementInputUpdate;
         InputSignals.Instance.OnInputeLookUpdate -= LookInputUpdate;
-        InputSignals.Instance.OnInputInteractPressed -= InteractInputUpdate;
     }
     private void MovementInputUpdate(Vector2 data)
     {
@@ -86,9 +84,5 @@ public class PlayerMovementController : MonoBehaviour
     private void LookInputUpdate(Vector2 data)
     {
         _look = data;
-    }
-    private void InteractInputUpdate()
-    {
-
     }
 }

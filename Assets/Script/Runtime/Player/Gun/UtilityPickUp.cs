@@ -5,18 +5,23 @@ namespace Runtime.Player.Gun
     class UtilityPickUp : MonoBehaviour
     {
         [SerializeField] private IUtility utility;
-        [SerializeField] private GunManager gunManager;
-        private void OnTriggerEnter(Collider other)
+        private GunManager gunManager;
+        private void Start()
         {
-            if (other.CompareTag("Player"))
+            gunManager = FindFirstObjectByType<GunManager>();
+            if (gunManager == null)
             {
-                Debug.Log("Utility Picked Up");
-                if (gunManager != null)
-                {
-                    Debug.Log("Utility Added to GunManager");
-                    gunManager.AddUtility(utility);
-                    Destroy(gameObject);
-                }
+                Debug.LogError("GunManager not found in the scene.");
+            }
+        }
+        public void PickUpUtility()
+        {
+            Debug.Log("Utility Picked Up");
+            if (gunManager != null)
+            {
+                Debug.Log("Utility Added to GunManager");
+                gunManager.AddUtility(utility);
+                Destroy(gameObject);
             }
         }
     }

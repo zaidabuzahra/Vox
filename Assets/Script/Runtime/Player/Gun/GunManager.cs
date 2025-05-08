@@ -100,7 +100,7 @@ public class GunManager : MonoBehaviour
         if (tempIndex == _currentUtilityIndex)
         {
             Debug.LogWarning("No utility to switch to");
-            _canUseUtility = false;
+            _canUseUtility = true;
             return;
         }
 
