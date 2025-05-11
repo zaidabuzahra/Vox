@@ -111,7 +111,7 @@ public class GunManager : MonoBehaviour
             if (_currentUtility != null)
             {
                 _currentUtility.Unequip();
-                transform.DOLocalRotate(new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, transform.localEulerAngles.z + 90 * i), 0.5f);
+                transform.DOLocalRotate(new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, transform.localEulerAngles.z + 60 * i), 0.5f);
             }
             StartCoroutine(AssignUtility());
         }
@@ -147,12 +147,13 @@ public class GunManager : MonoBehaviour
     {
         _canUseUtility = state;
     }
-    public void AddUtility(IUtility newUtility)
+    public void AddUtility(GameObject newUtility)
      {
         //_animator.SetTrigger("Pick Up Utility");
+        GameObject utility = Instantiate(newUtility, transform);
         _maxUtilityIndex++;
-        utilities[_maxUtilityIndex] = newUtility;
-        _currentUtility = newUtility;
+        utilities[_maxUtilityIndex] = utility.GetComponent<IUtility>();
+        _currentUtility = utilities[_maxUtilityIndex];
         _currentUtility.Equip();
         _currentUtilityIndex = _maxUtilityIndex;
         _canUseUtility = true;

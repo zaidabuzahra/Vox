@@ -21,6 +21,7 @@ public class UVLightUtility : IUtility
     }
     public override void Equip()
     {
+        gameObject.SetActive(true);
         animator.SetBool("Equip", true);
     }
     public override void Unequip()

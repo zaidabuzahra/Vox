@@ -25,11 +25,11 @@ public class ChargeObject : MonoBehaviour
             }
         }
     }
-    public void Charge()
+    public void Charge(float charge)
     {
         _isCharging = true;
 
-        currentCharge += Time.deltaTime * dischargeRate;
+        currentCharge += charge;
         if (currentCharge >= neededCharge)
         {
             currentCharge = neededCharge;

@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿using nTools.PrefabPainter;
+using Unity.VisualScripting;
+using UnityEngine;
 
 namespace Runtime.Player.Gun
 {
     class UtilityPickUp : MonoBehaviour
     {
-        [SerializeField] private IUtility utility;
+        [SerializeField] private GameObject utility;
         private GunManager gunManager;
         private void Start()
         {

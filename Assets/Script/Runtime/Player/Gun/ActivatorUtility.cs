@@ -1,45 +1,26 @@
+using DG.Tweening;
 using Runtime.Player.Gun;
 using UnityEngine;
 
 public class ActivatorUtility : IUtility
 {
-    public Transform gunPoint;
-    public LineRenderer lineRenderer;
-    private Camera _cam;
-    public GameObject debugSphere;
+    [SerializeField] private Transform gunPoint;
+    [SerializeField] private GameObject chargedShot;
+    [SerializeField] private ActivatorProjectile projectilePrefab;
+    [SerializeField, Range(0f, 0.1f)] private float scaleSpeed;
+
+    private float _chargedEnergy;
 
     private void Start()
     {
         stopUtility = true;
-        _cam = Camera.main;
     }
 
     private void Update()
     {
         if (isActive)
         {
-            lineRenderer.SetPosition(0, gunPoint.position);
-            Vector3 rayOrigin = new (0.5f, 0.5f, 0f);
-
-            // actual Ray
-            Ray ray = _cam.ViewportPointToRay(rayOrigin);
-
-            RaycastHit hit;
-            if (Physics.Raycast(ray, out hit))
-            {
-                // our Ray intersected a collider
-                debugSphere.transform.position = hit.point;
-                Debug.Log("Hit: " + hit.collider.name);
-                lineRenderer.SetPosition(1, hit.point);
-                if (hit.collider.CompareTag("ChargeObject"))
-                {
-                    hit.collider.gameObject.GetComponent<ChargeObject>().Charge();
-                }
-            }
-            else
-            {
-                lineRenderer.SetPosition(1, gunPoint.position + (_cam.transform.forward * 50));
-            }
+            Charge();
         }
     }
 
@@ -51,7 +32,16 @@ public class ActivatorUtility : IUtility
     public override void StopUtility()
     {
         isActive = false;
-        lineRenderer.enabled = false;
+        chargedShot.transform.DOScale(0,0.1f);
+        chargedShot.SetActive(false);
+        ActivatorProjectile projectile = Instantiate(projectilePrefab, gunPoint.position, gunPoint.rotation);
+        projectile.transform.DOScale(chargedShot.transform.localScale, 0.1f);
+        projectile.ShootProjectile(gunPoint.forward, _chargedEnergy);
+    }
+
+    private void Charge()
+    {
+        chargedShot.transform.DOScale(chargedShot.transform.localScale + Vector3.one * scaleSpeed, 0.1f); 
     }
 
     public override void Unequip()
@@ -63,7 +53,8 @@ public class ActivatorUtility : IUtility
     public override void UseUtility()
     {
         isActive = true;
-        lineRenderer.enabled = true;
+        _chargedEnergy = 0;
+        chargedShot.SetActive(true);
         Debug.Log("Using Activator Utility");
     }
 }
