@@ -97,7 +97,7 @@ public class GunManager : MonoBehaviour
             tempIndex = _maxUtilityIndex;
         }
 
-        if (tempIndex == _currentUtilityIndex)
+        if (tempIndex == _currentUtilityIndex || !utilities[tempIndex])
         {
             Debug.LogWarning("No utility to switch to");
             _canUseUtility = true;
@@ -111,7 +111,7 @@ public class GunManager : MonoBehaviour
             if (_currentUtility != null)
             {
                 _currentUtility.Unequip();
-                transform.DOLocalRotate(new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, transform.localEulerAngles.z + 60 * i), 0.5f);
+                //transform.DOLocalRotate(new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, transform.localEulerAngles.z + 60 * i), 0.5f);
             }
             StartCoroutine(AssignUtility());
         }
@@ -152,10 +152,14 @@ public class GunManager : MonoBehaviour
         //_animator.SetTrigger("Pick Up Utility");
         GameObject utility = Instantiate(newUtility, transform);
         _maxUtilityIndex++;
-        utilities[_maxUtilityIndex] = utility.GetComponent<IUtility>();
-        _currentUtility = utilities[_maxUtilityIndex];
-        _currentUtility.Equip();
         _currentUtilityIndex = _maxUtilityIndex;
-        _canUseUtility = true;
+
+        utilities[_maxUtilityIndex] = utility.GetComponent<IUtility>();
+        if (_currentUtility != null)
+        {
+            _currentUtility.Unequip();
+            //transform.DOLocalRotate(new Vector3(transform.localEulerAngles.x, transform.localEulerAngles.y, transform.localEulerAngles.z + 60), 0.5f);
+        }
+        StartCoroutine(AssignUtility());
     }
 }
