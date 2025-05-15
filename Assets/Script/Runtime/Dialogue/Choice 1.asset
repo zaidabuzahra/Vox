@@ -15,15 +15,19 @@ MonoBehaviour:
   title: Who... who's there? What's happening?
   activationType: 2
   priority: 0
-  dialogueClip: {fileID: 0}
+  dialogueClip: {fileID: 8300000, guid: 4e68b35ab0848624fa97e3cdde21b3a5, type: 3}
   captions:
-  - Shhh... you're alright. I'm right here. You're safe.
+  - Ah, there you are.
+  - I was beginning to worry. The connection was... unstable.
+  - Can you hear me clearly now?
   captionDelays:
+  - 2
+  - 4
   - 3
   expectedDuration: 8
-  canRespond: 0
+  canRespond: 1
   canSkip: 1
   responseDelay: 0
-  responseCount: 10
+  responseCount: 1
   responses:
-  - {fileID: 11400000, guid: 53f7477c8cd8beb40baedb1d8599d730, type: 2}
+  - {fileID: 11400000, guid: 6cf4bef2b8a92f9438cf65d3910135bf, type: 2}

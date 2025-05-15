@@ -14,22 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: test
   activationType: 0
-  priority: 0
+  priority: 1
   dialogueClip: {fileID: 0}
   captions:
-  - "....\t"
+  - 'zzztt... '
   - Can you hear me? Hello?
   - Come on... wake up!
   captionDelays:
   - 2
-  - 3
-  - 3
+  - 2
+  - 2
   expectedDuration: 18
   canRespond: 1
-  canSkip: 0
+  canSkip: 1
   responseDelay: 3
-  responseCount: 3
+  responseCount: 1
   responses:
   - {fileID: 11400000, guid: 46b33a97aa32c594cb28c2c5dbe6db5e, type: 2}
-  - {fileID: 11400000, guid: 1f47b35e980e4fb4f9eb66d710dccafc, type: 2}
-  - {fileID: 11400000, guid: 6cf4bef2b8a92f9438cf65d3910135bf, type: 2}

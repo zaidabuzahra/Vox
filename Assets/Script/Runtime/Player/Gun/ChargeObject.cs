@@ -1,39 +1,35 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class ChargeObject : MonoBehaviour
+public abstract class ChargeObject : MonoBehaviour
 {
-    public bool canDischarge;
+    protected bool canDecharge;
 
-    public float neededCharge;
-    public float currentCharge;
+    protected float currentCharge;
+    protected float maxCharge;
+    [SerializeField] protected float dechargeRate;
 
-    public float dischargeRate;
-
-    public UnityEvent events;
-
-    private bool _isCharging;
+    public bool isCharged;
 
     private void Update()
     {
-        if (canDischarge && !_isCharging)
+        OnUpdate();
+    }
+    public virtual void OnUpdate()
+    {
+        if (canDecharge && isCharged)
         {
-            currentCharge -= Time.deltaTime * dischargeRate;
+            currentCharge -= Time.deltaTime * dechargeRate;
             if (currentCharge <= 0)
             {
-                currentCharge = 0;
+                Uncharge();
             }
         }
     }
-    public void Charge(float charge)
+    public virtual void Uncharge()
     {
-        _isCharging = true;
-
-        currentCharge += charge;
-        if (currentCharge >= neededCharge)
-        {
-            currentCharge = neededCharge;
-            events.Invoke();
-        }
+        isCharged = false;
+        currentCharge = 0;
     }
+    public abstract void Charge(float charge);
 }

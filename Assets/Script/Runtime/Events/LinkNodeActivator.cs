@@ -1,16 +1,30 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class LinkNodeActivator : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    private List<LinkNode> _nodes = new();
+
+    public void AddNode(LinkNode node)
     {
-        
+        if (!_nodes.Contains(node))
+        {
+            _nodes.Add(node);
+        }
+    }
+    public void RemoveNode(LinkNode node)
+    {
+        if (_nodes.Contains(node))
+        {
+            _nodes.Remove(node);
+        }
+    }
+    public void ConfimNodes()
+    {
+        foreach (var node in _nodes)
+        {
+            node.ConfirmCharge();
+        }
     }
 }

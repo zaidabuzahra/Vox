@@ -1,16 +1,30 @@
 using UnityEngine;
+using UnityEngine.UI;
 
-public class LauchSeedActivator : MonoBehaviour
+public class LauchSeedActivator : ChargeObject
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Transform shootingDirection;
+    [SerializeField] private GameObject shootingSeed;
+    [SerializeField] private float amplifier = 1f;
+    [SerializeField] private Slider chargeSlider;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        canDecharge = false;
+        currentCharge = 0f;
+    }
+    public void Catch(Seed seed)
+    {
+        //play animation
+        shootingSeed = seed.gameObject;
+    }
+    public override void Charge(float charge)
+    {
+        if (shootingSeed != null)
+        {
+            Debug.Log("Shooting seed");
+            shootingSeed.GetComponent<Seed>().Shoot(shootingDirection.forward, charge * amplifier);
+            //chargeSlider.value = charge / 10;
+        }
     }
 }

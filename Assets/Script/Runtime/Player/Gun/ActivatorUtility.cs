@@ -8,6 +8,7 @@ public class ActivatorUtility : IUtility
     [SerializeField] private GameObject chargedShot;
     [SerializeField] private ActivatorProjectile projectilePrefab;
     [SerializeField, Range(0f, 0.1f)] private float scaleSpeed;
+    [SerializeField, Range(1f, 10f)] private float chargeSpeed;
 
     private float _chargedEnergy;
 
@@ -35,10 +36,9 @@ public class ActivatorUtility : IUtility
     {
         isActive = false;
         animator.SetBool("Charge", false);
-        chargedShot.transform.DOScale(0,0.1f);
+        chargedShot.transform.DOScale(Vector3.zero,0.1f);
         chargedShot.SetActive(false);
         ActivatorProjectile projectile = Instantiate(projectilePrefab, gunPoint.position, gunPoint.rotation);
-        Debug.Log(projectile);
         projectile.transform.DOScale(chargedShot.transform.localScale, 0.1f);
         projectile.ShootProjectile(gunPoint.forward, _chargedEnergy);
     }
@@ -46,7 +46,7 @@ public class ActivatorUtility : IUtility
     private void Charge()
     {
         chargedShot.transform.DOScale(chargedShot.transform.localScale + Vector3.one * scaleSpeed, 0.1f);
-        _chargedEnergy += Time.deltaTime;
+        _chargedEnergy += Time.deltaTime * chargeSpeed;
         animator.SetFloat("ChargingTimer", _chargedEnergy);
         Debug.Log(_chargedEnergy);
     }

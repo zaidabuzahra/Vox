@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Activate
   - ChargeObject
+  - Goal
   layers:
   - Default
   - TransparentFX

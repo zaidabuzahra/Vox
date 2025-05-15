@@ -12,13 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
   m_Name: Choice 2
   m_EditorClassIdentifier: 
-  title: System reboot in progress. State purpose.
+  title: Wait... what is going on?
   activationType: 2
   priority: 0
   dialogueClip: {fileID: 0}
   captions:
-  - Of course. Easy now. Your mind needs time to catch up with your body.
+  - You had an accident.
+  - Nothing to worry about.
+  - it's just... a hiccup.
   captionDelays:
+  - 2
+  - 2
   - 3
   expectedDuration: 8
   canRespond: 0

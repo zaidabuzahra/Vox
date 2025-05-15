@@ -102,7 +102,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1342831953834923388
 Transform:
   m_ObjectHideFlags: 0
@@ -144,6 +144,7 @@ MonoBehaviour:
   chargedShot: {fileID: 82864716838431294}
   projectilePrefab: {fileID: 6225326636151609787, guid: ad66dad7cc598e946b59deeefa3cf7e0, type: 3}
   scaleSpeed: 0.015
+  chargeSpeed: 3
 --- !u!1 &9175612241586523163
 GameObject:
   m_ObjectHideFlags: 0

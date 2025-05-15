@@ -61,8 +61,11 @@ namespace Runtime
             _dialogueTimer = dialogue.expectedDuration;
             uiDialogueController.UIEndOptions();
             currentDialogue = dialogue;
-            //_audioSource.clip = dialogue.dialogueClip;
-            //_audioSource.Play();
+            if (dialogue.dialogueClip != null) 
+            { 
+                _audioSource.clip = dialogue.dialogueClip;
+                _audioSource.Play(); 
+            }
             _dialogueActive = true;
 
             if (_currentCoroutine != null)

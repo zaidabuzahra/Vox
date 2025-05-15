@@ -12,13 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
   m_Name: Choice 3
   m_EditorClassIdentifier: 
-  title: 'Status... unknown. Location: unknown.'
+  title: Yes. I feel... disoriented.
   activationType: 2
   priority: 0
   dialogueClip: {fileID: 0}
   captions:
-  - Good. Focus on my voice. You're safe.
+  - Interesting... Your systems are functiona but.. your memory data appears fragmented
+  - Like shattered glass... Perhaps it was the fall
   captionDelays:
+  - 5
   - 3
   expectedDuration: 13
   canRespond: 1
@@ -26,4 +28,4 @@ MonoBehaviour:
   responseDelay: 0
   responseCount: 1
   responses:
-  - {fileID: 11400000, guid: 53f7477c8cd8beb40baedb1d8599d730, type: 2}
+  - {fileID: 11400000, guid: 1f47b35e980e4fb4f9eb66d710dccafc, type: 2}
