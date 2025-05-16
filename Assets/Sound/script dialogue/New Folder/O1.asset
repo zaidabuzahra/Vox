@@ -10,23 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
-  m_Name: It feels right
+  m_Name: O1
   m_EditorClassIdentifier: 
-  title: "Orion\u2026 it feels right."
+  title: 'Wha... who is this? Where... am I? '
   activationType: 0
   priority: 0
-  dialogueClip: {fileID: 8300000, guid: cb6e3ea1b539dfc4382a83a3c258d7fb, type: 3}
+  dialogueClip: {fileID: 8300000, guid: 8c2f88b1567c0604c8c543daa7a2d84c, type: 3}
   captions:
-  - "That\u2019s the spirit. You\u2019ve always had an intuition for truth even when
-    the facts were buried"
-  - "Hold onto that feeling. It will guide you.\r"
+  - 'Ah, there you are. I was beginning to worry. The connection was... unstable.
+
+'
+  - Can you hear me clearly now?
   captionDelays:
-  - 4
-  - 3
-  expectedDuration: 7
+  - 5
+  - 5
+  expectedDuration: 10
   canRespond: 1
-  canSkip: 0
+  canSkip: 1
   responseDelay: 0
   responseCount: 1
   responses:
-  - {fileID: 11400000, guid: 70d3bb69d92140b46b7d264b0cd1740f, type: 2}
+  - {fileID: 11400000, guid: 5f129f5b86ae69f4b84a2b55f5df570c, type: 2}
