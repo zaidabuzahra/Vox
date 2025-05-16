@@ -18,21 +18,19 @@ public class LinkNode : ChargeObject
 
     [SerializeField] private Material mat;
 
-    [SerializeField] private UnityEvent onPuzzleSolved;
-
     public bool canCharge;
     private bool _confirmed;
     float _energy;
     float elapsedtime;
     public float desiredtime;
-    bool idk;
-    bool idktwo;
+    public float materialMax;
+    public float materialMin;
 
     private void Start()
     {
         canDecharge = true;
         maxCharge = 10f;
-        if (isFinalNode)
+        if (isFinalNode || isConfiremer)
         {
             canDecharge = false;
         }
@@ -45,12 +43,12 @@ public class LinkNode : ChargeObject
             _confirmed = true;
             if (originalNode.mat != null)
             {
-                originalNode.mat.SetFloat("_Energy", 100);
+                originalNode.mat.SetFloat("_Energy", materialMax);
             }
         }
         if (nextNode != null && nextNode.mat != null)
         {
-            nextNode.mat.SetFloat("_Energy", 0);
+            nextNode.mat.SetFloat("_Energy", materialMin);
         }
     }
 
@@ -61,30 +59,20 @@ public class LinkNode : ChargeObject
         {
             chargeSlider.fillAmount = (currentCharge / maxCharge);
         }
-        if (mat != null && idk)
+        if (mat != null && canCharge)
         {
             elapsedtime += Time.deltaTime;
             float percentage = elapsedtime / desiredtime;
-            _energy = Mathf.Lerp(0, 100, percentage);
+            _energy = Mathf.Lerp(materialMin, materialMax, percentage);
             mat.SetFloat("_Energy", _energy);
 
         }
-        if (_energy >= 100)
-        {
-            idk = false;
-            elapsedtime = 0;
-        }
-        if (mat != null && idktwo)
+        if (mat != null && !canCharge)
         {
             elapsedtime += Time.deltaTime;
             float percentage = elapsedtime / desiredtime;
-            _energy = Mathf.Lerp(100, 0, percentage);
+            _energy = Mathf.Lerp(materialMax, materialMin, percentage);
             mat.SetFloat("_Energy", _energy);
-        }
-        if (_energy <= 0)
-        {
-            idktwo = false;
-            elapsedtime = 0;
         }
     }
 
@@ -134,11 +122,11 @@ public class LinkNode : ChargeObject
     public void EnableNode()
     {
         Debug.LogWarning("Enabling: " + name);
+        if (!canCharge) elapsedtime = 0;
         canCharge = true;
         if (mat != null)
         {
             _energy = 0;
-            idk = true;
         }
         if (isConfiremer)
         {
@@ -146,18 +134,14 @@ public class LinkNode : ChargeObject
         }
         if (isFinalNode)
         {
-            onPuzzleSolved.Invoke();
+            linkNodeActivator.SourceReachedDestination();
         }
     }
     private void DisableNode()
     {
         Debug.LogWarning("Disabling: " + name);
-
+        if (canCharge) elapsedtime = 0;
         canCharge = false;
-        if (mat != null)
-        {
-            idktwo = true;
-        }
     }
     public void ConfirmCharge()
     {
