@@ -6,7 +6,7 @@ public class LauchSeedActivator : ChargeObject
     [SerializeField] private Transform shootingDirection;
     [SerializeField] private GameObject shootingSeed;
     [SerializeField] private float amplifier = 1f;
-    [SerializeField] private Slider chargeSlider;
+    [SerializeField] private Image chargeSlider;
 
     private void Start()
     {
@@ -24,7 +24,7 @@ public class LauchSeedActivator : ChargeObject
         {
             Debug.Log("Shooting seed");
             shootingSeed.GetComponent<Seed>().Shoot(shootingDirection.forward, charge * amplifier);
-            //chargeSlider.value = charge / 10;
+            chargeSlider.fillAmount = charge / 10;
         }
     }
 }
