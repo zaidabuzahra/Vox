@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: O2
+  m_EditorClassIdentifier: 
+  title: Yes. I feel... disoriented.
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: 4579e2f77ad3cf544b36f4b3b18113bb, type: 3}
+  captions:
+  - 'Interesting... Your systems are functional, but... your memory data appears
+    fragmented.
+
+'
+  - "\rLike shattered glass.\r                                    Perhaps... it was
+    the fall.\r"
+  captionDelays:
+  - 6
+  - 5
+  expectedDuration: 11
+  canRespond: 1
+  canSkip: 0
+  responseDelay: 0
+  responseCount: 1
+  responses:
+  - {fileID: 11400000, guid: 0f25deaeb557c0146bf4d5a7eb9a24af, type: 2}

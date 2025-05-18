@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: Dead Flower
+  m_EditorClassIdentifier: 
+  title: "Ah\u2026 fascinating. This one hasn\u2019t responded. Dormant\u2026 or
+    resisting. That\u2019s unusual. "
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: 5390addf5bbdc664ab8bfa0222932b12, type: 3}
+  captions:
+  - "Ah\u2026 fascinating. This one hasn\u2019t responded. Dormant\u2026 or resisting.
+    That\u2019s unusual.\r\n"
+  - "It seems we\u2019ll need to reinitialize the BioEngine\u2019s core functions
+    manually roots, propagation, chemistry. Reignite its pulse."
+  - 'Once the systems are aligned, this bloom will rise again. As it was meant to
+    be
+
+'
+  captionDelays:
+  - 8
+  - 10
+  - 10
+  expectedDuration: 29
+  canRespond: 0
+  canSkip: 0
+  responseDelay: 0
+  responseCount: 0
+  responses:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

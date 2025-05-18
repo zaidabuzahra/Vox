@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: I call it the Garden.
+  m_EditorClassIdentifier: 
+  title: "I call it the Garden. And it\u2019s not just a garden. It is the beginning
+    of a new era. A rebirth in the name of progress. In the name... of evolution. "
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: 3aa53666802efd94e87f77525c34a8c1, type: 3}
+  captions:
+  - "I call it the Garden. And it\u2019s not just a garden. It is the beginning of
+    a new era. \r\n\r\n"
+  - 'A rebirth in the name of progress. In the name... of evolution.
+
+'
+  captionDelays:
+  - 6
+  - 5
+  expectedDuration: 13
+  canRespond: 1
+  canSkip: 0
+  responseDelay: 0
+  responseCount: 1
+  responses:
+  - {fileID: 0}

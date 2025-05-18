@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: How is this possible
+  m_EditorClassIdentifier: 
+  title: "How could this possibly be!!!!!!!  These plants\u2026. The ecosystem it
+    shouldn't be alive howwwww!!!!!!. "
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: ad3b632738e1e5445a1ad3a5f2823fcc, type: 3}
+  captions:
+  - That's my colleague that I knew and loved. It is simply The bioengines magic
+  - Ecosystems that were never meant to coexist together are not only thriving but
+    flourishing as well.
+  - "The bioengine is A machine\u2026 yet more than a machine."
+  - "A force of nature\u2026 yet crafted by our hands. The BioEngine does not replace
+    life, it elevates it."
+  - It takes the chaos of raw nature and sculpts it into perfection, allowing it
+    to flourish beyond.
+  captionDelays:
+  - 5.5
+  - 5.5
+  - 5.5
+  - 5.5
+  - 5.5
+  expectedDuration: 6
+  canRespond: 1
+  canSkip: 0
+  responseDelay: 0
+  responseCount: 1
+  responses:
+  - {fileID: 0}

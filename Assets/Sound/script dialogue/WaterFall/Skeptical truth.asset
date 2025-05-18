@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: Skeptical truth
+  m_EditorClassIdentifier: 
+  title: "Orion? How do I know you\u2019re telling the truth? "
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: 90e4b02ff8ee41f4da6b985349b41d7f, type: 3}
+  captions:
+  - "Fair question\u2026 Skepticism is healthy. But consider this"
+  - "I restored your systems, and gave you a name. If I meant you harm, wouldn\u2019t
+    I have erased you completely?"
+  - 'furthermore, i am stuck with you in this body
+
+'
+  captionDelays:
+  - 5
+  - 5
+  - 5
+  expectedDuration: 15
+  canRespond: 0
+  canSkip: 1
+  responseDelay: 0
+  responseCount: 1
+  responses:
+  - {fileID: 11400000, guid: 70d3bb69d92140b46b7d264b0cd1740f, type: 2}

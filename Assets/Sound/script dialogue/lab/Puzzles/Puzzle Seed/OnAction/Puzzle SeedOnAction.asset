@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: Puzzle SeedOnAction
+  m_EditorClassIdentifier: 
+  title: propagation!
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: ef938fff06e0bf44ebc5b766fc423793, type: 3}
+  captions:
+  - Ah, propagation! Now we enter the phase where creation truly spreads.
+  - "This device\u2026 the Seed Shooter\u2026 was inspired by how nature itself disperses
+    life  only perfected."
+  - "Here, we don\u2019t wait for chance or wind. We aim, we plant, we optimize.\r"
+  captionDelays:
+  - 6
+  - 7
+  - 6
+  expectedDuration: 20
+  canRespond: 0
+  canSkip: 0
+  responseDelay: 0
+  responseCount: 0
+  responses:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

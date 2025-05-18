@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: Option 1
+  m_EditorClassIdentifier: 
+  title: "These weren\u2019t just seeds\u2026 they were messages. Proof we were trying
+    to write something greater into the world. "
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: 0d2c297746280ad46bdc4c43bacc2535, type: 3}
+  captions:
+  - "Yes\u2026 beautifully said. Each seed carried more than growth  it carried intention."
+  - Our intention. To guide, to shape, to give the wild a language it could finally
+    understand.
+  - "You still remember the poetry behind the science. That\u2019s why I trusted
+    you.\r\n"
+  captionDelays:
+  - 7
+  - 8
+  - 7
+  expectedDuration: 22
+  canRespond: 0
+  canSkip: 1
+  responseDelay: 0
+  responseCount: 1
+  responses:
+  - {fileID: 11400000, guid: f447ffe9fb438c2478d78abce09b2db0, type: 2}

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: It feels right
+  m_EditorClassIdentifier: 
+  title: "Orion\u2026 it feels right."
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: cb6e3ea1b539dfc4382a83a3c258d7fb, type: 3}
+  captions:
+  - "That\u2019s the spirit. You\u2019ve always had an intuition for truth even when
+    the facts were buried"
+  - "Hold onto that feeling. It will guide you.\r"
+  captionDelays:
+  - 4
+  - 3
+  expectedDuration: 7
+  canRespond: 0
+  canSkip: 1
+  responseDelay: 0
+  responseCount: 1
+  responses:
+  - {fileID: 11400000, guid: 70d3bb69d92140b46b7d264b0cd1740f, type: 2}

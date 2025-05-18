@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: How Long have i been here
+  m_EditorClassIdentifier: 
+  title: 'How long have I been here? '
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: cc0f86f77914819469d6c436e1bcb9a6, type: 3}
+  captions:
+  - "Time... is difficult to measure, Orion. Your body has been dormant for years.Your
+    mind? Even longer, I fear.\r"
+  captionDelays:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  expectedDuration: 12
+  canRespond: 0
+  canSkip: 1
+  responseDelay: 0
+  responseCount: 1
+  responses:
+  - {fileID: 11400000, guid: 690fec3bcbab8cd4da87252716595d84, type: 2}

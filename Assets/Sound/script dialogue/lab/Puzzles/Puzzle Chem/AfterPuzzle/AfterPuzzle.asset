@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: AfterPuzzle
+  m_EditorClassIdentifier: 
+  title: With its chemistry restored,
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: 162ad27311c2e234f8bcf4925e4db1fb, type: 3}
+  captions:
+  - "With its chemistry restored, the BioEngine breathes once more. The biosphere
+    recalibrates oxygen surges, enzymes stabilize, and the dormant core awakens.
+    (beat) See how it blooms? Not with wild chaos, but with intention. We didn\u2019t
+    cultivate life\u2026 we composed it. Every leaf, every breath conducted like
+    symphonies written in chlorophyll and current.\r\n"
+  captionDelays:
+  - 20
+  expectedDuration: 20
+  canRespond: 0
+  canSkip: 0
+  responseDelay: 0
+  responseCount: 0
+  responses:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
