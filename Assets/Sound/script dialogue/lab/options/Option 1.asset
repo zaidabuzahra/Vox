@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: Option 1
+  m_EditorClassIdentifier: 
+  title: "It\u2019s beautiful. Beyond comprehension. "
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: f5f24b889cd836d4f9e3faecda0326c3, type: 3}
+  captions:
+  - "Yes\u2026 it is, isn\u2019t it? Beauty born not from chance, but from intent."
+  - "From design. This is what harmony looks like, a world where nature is not simply
+    preserved\u2026 but perfected.\r\n"
+  captionDelays:
+  - 5
+  - 10
+  expectedDuration: 15
+  canRespond: 0
+  canSkip: 0
+  responseDelay: 0
+  responseCount: 0
+  responses: []

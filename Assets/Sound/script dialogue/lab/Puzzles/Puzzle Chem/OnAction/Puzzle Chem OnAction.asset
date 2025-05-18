@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: Puzzle Chem OnAction
+  m_EditorClassIdentifier: 
+  title: 'Ah, this... this was always the most delicate of all functions. Chemistry '
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: cde2308efa854a144b1de9ea713f2c9b, type: 3}
+  captions:
+  - "Ah, this... this was always the most delicate of all functions. Chemistry the
+    heart of transformation. its the very code of life. The BioEngine doesn\u2019t
+    imitate nature\u2026 it speaks its language. Rewrites it.\r\n"
+  captionDelays:
+  - 15
+  expectedDuration: 15
+  canRespond: 0
+  canSkip: 1
+  responseDelay: 0
+  responseCount: 1
+  responses:
+  - {fileID: 11400000, guid: 176f6401cf4ce314189ce65e16a912da, type: 2}

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: Option 1
+  m_EditorClassIdentifier: 
+  title: "so I really built this\u2026 my eyes can't just process this\u2026"
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: 3f1f4b87fde71f14a93b3e0597519265, type: 3}
+  captions:
+  - "Yes\u2026 you see it now, don\u2019t you? This place remembers you every line
+    of code, every root it touches. You were a marvel, Orion\r\n"
+  captionDelays:
+  - 11
+  expectedDuration: 11
+  canRespond: 0
+  canSkip: 1
+  responseDelay: 0
+  responseCount: 1
+  responses:
+  - {fileID: 11400000, guid: 6146087bc3f047e4da2678e38cbc1481, type: 2}

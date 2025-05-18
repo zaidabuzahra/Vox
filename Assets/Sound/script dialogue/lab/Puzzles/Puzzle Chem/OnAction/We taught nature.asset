@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: We taught nature
+  m_EditorClassIdentifier: 
+  title: we nature
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: 17e5a377cc937c047aa927acbd812e9b, type: 3}
+  captions:
+  - "Through chemistry, we taught nature how to grow stronger, to endure beyond its
+    original design. Not through dominance\u2026 but through dialogue. Harmony, after
+    all, is an equation. By constructing a micro-environment a localized biosphere
+    tailored to each species. We flooded it with concentrated oxygen, bathed it in
+    specific spectrums of ultraviolet light, and modulated humidity and nutrients
+    to an exact rhythm. Growth wasn\u2019t just nurtured\u2026 it was accelerated
+    exponentially.\r\n"
+  captionDelays:
+  - 34
+  expectedDuration: 34
+  canRespond: 0
+  canSkip: 1
+  responseDelay: 0
+  responseCount: 1
+  responses:
+  - {fileID: 11400000, guid: 8b472e77e23230c44988f26892cb91be, type: 2}

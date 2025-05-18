@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: Central Stable
+  m_EditorClassIdentifier: 
+  title: "The central stabilizer has entered an unpredictable phase. I need you to
+    ascend to the Core Integration Chamber. Something\u2019s\u2026 interfering with
+    the system's core logic. With your restored protocols, you\u2019re the only one
+    who can fix it. "
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: 80f914bf29781ed47a42b62f7ba8602f, type: 3}
+  captions:
+  - 'The central stabilizer has entered an unpredictable phase. '
+  - "I need you to ascend to the Core Integration Chamber. Something\u2019s\u2026
+    interfering "
+  - "with the system's core logic. With your restored protocols, you\u2019re the
+    only one who can fix it.\r\n"
+  captionDelays:
+  - 5
+  - 5
+  - 5
+  expectedDuration: 12
+  canRespond: 1
+  canSkip: 0
+  responseDelay: 0
+  responseCount: 1
+  responses:
+  - {fileID: 11400000, guid: 69b1defacb5e811438fc46d3241b5c69, type: 2}
