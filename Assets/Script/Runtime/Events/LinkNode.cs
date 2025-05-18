@@ -1,6 +1,4 @@
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class LinkNode : ChargeObject
@@ -17,6 +15,7 @@ public class LinkNode : ChargeObject
     [SerializeField] private Image chargeSlider;
 
     [SerializeField] private Material mat;
+    public PuzzleManager puzzleManager;
 
     public bool canCharge;
     private bool _confirmed;
@@ -134,7 +133,8 @@ public class LinkNode : ChargeObject
         }
         if (isFinalNode)
         {
-            linkNodeActivator.SourceReachedDestination();
+            //linkNodeActivator.SourceReachedDestination();
+            puzzleManager.SolvePart();
         }
     }
     private void DisableNode()

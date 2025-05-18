@@ -4,12 +4,12 @@ using UnityEngine.Events;
 
 public class LinkNodeActivator : MonoBehaviour
 {
-    [SerializeField] int finalNodeCount;
-
-    private int _nodeCount;
+    //[SerializeField] int finalNodeCount;
+    //
+    //private int _nodeCount;
     private List<LinkNode> _nodes = new();
-
-    [SerializeField] private UnityEvent onPuzzleSolved;
+    //
+    //[SerializeField] private UnityEvent onPuzzleSolved;
 
     public void AddNode(LinkNode node)
     {
@@ -31,7 +31,7 @@ public class LinkNodeActivator : MonoBehaviour
         {
             node.ConfirmCharge();
         }
-    }
+    }/*
     public void SourceReachedDestination()
     {
         _nodeCount++;
@@ -40,5 +40,5 @@ public class LinkNodeActivator : MonoBehaviour
             Debug.Log("All nodes reached destination");
             onPuzzleSolved?.Invoke();
         }
-    }
+    }*/
 }

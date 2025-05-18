@@ -1,16 +1,17 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PuzzleManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private int puzzleCount;
+    public UnityEvent resolvedPuzzle;
+    private int currentPuzzleIndex = 0;
+    public void SolvePart()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        currentPuzzleIndex++;
+        if (currentPuzzleIndex == puzzleCount)
+        {
+            resolvedPuzzle.Invoke();
+        }
     }
 }
