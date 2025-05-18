@@ -22,11 +22,11 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: EasyPipe
   m_Shader: {fileID: -6465566751694194690, guid: eba60c6deea13494bbd5777487ea722d, type: 3}
-  m_Parent: {fileID: 2100000, guid: 4735201ebb2463c4f810b83f3c8d9097, type: 2}
+  m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -36,11 +36,26 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Energy: -3.5
+    - _Energy: -5
+    - _QueueControl: 0
+    - _QueueOffset: 0
     m_Colors:
-    - _EmptyColor: {r: 1, g: 1, b: 1, a: 0.27058825}
+    - _EmptyColor: {r: 0.5098039, g: 0.12391832, b: 0.066666625, a: 0}
+    - _FullColor: {r: 0, g: 1, b: 0.8971636, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
