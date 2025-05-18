@@ -24,8 +24,8 @@ MonoBehaviour:
   - 6
   - 5
   expectedDuration: 11
-  canRespond: 1
-  canSkip: 0
+  canRespond: 0
+  canSkip: 1
   responseDelay: 0
   responseCount: 1
   responses:

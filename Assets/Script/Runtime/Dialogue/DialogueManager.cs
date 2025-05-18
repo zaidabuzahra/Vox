@@ -14,7 +14,7 @@ namespace Runtime
         private float _dialogueTimer;
         private AudioSource _audioSource;
         private Coroutine _currentCoroutine;
-        private readonly Queue<Dialogue> _dialogueQueue = new();
+        //private readonly Queue<Dialogue> _dialogueQueue = new();
 
         private bool _dialogueActive;
 
@@ -27,11 +27,11 @@ namespace Runtime
             if (currentDialogue != null)
             {
                 _dialogueTimer -= Time.deltaTime;
-                if (_dialogueTimer <= 0 && !currentDialogue.canSkip)
+                if (_dialogueTimer <= 0 && currentDialogue.canSkip)
                 {
                     RequestPlayDialogue(currentDialogue.responses[currentDialogue.responses.Length - 1]);
                     Debug.Log("WOWOOWOWOWOW");
-                    currentDialogue.canSkip = true;
+                    //currentDialogue.canSkip = true;
                 }
             }
         }
@@ -40,14 +40,14 @@ namespace Runtime
             Debug.Log("Requesting...");
             if (dialogue.priority == DialoguePriority.High)
             {
-                _dialogueQueue.Clear();
+                //_dialogueQueue.Clear();
                 AbortDialogue();
             }
             else if (dialogue.priority == DialoguePriority.Low)
             {
                 if (_dialogueActive && dialogue.activationType != DialogueActivationType.DialogueChoice)
                 {
-                    _dialogueQueue.Enqueue(dialogue);
+                    //_dialogueQueue.Enqueue(dialogue);
                     return;
                 }
             }
@@ -102,7 +102,7 @@ namespace Runtime
 
         private void PlayDialogueQueue()
         {
-            if (_dialogueQueue.Count > 0) RequestPlayDialogue(_dialogueQueue.Dequeue());
+            //if (_dialogueQueue.Count > 0) RequestPlayDialogue(_dialogueQueue.Dequeue());
         }
 
         //This is called if an error occurs and the dialogue is not completed in the expected time
