@@ -1,6 +1,5 @@
-﻿using nTools.PrefabPainter;
-using Unity.VisualScripting;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Events;
 
 namespace Runtime.Player.Gun
 {
@@ -18,6 +17,10 @@ namespace Runtime.Player.Gun
         }
         public void PickUpUtility()
         {
+            if (utility.GetComponent<UVLightUtility>())
+            {
+                InputSignals.Instance.PickUp?.Invoke(utility);
+            }
             Debug.Log("Utility Picked Up");
             if (gunManager != null)
             {

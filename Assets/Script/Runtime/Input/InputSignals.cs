@@ -18,4 +18,7 @@ public class InputSignals : MonoSingleton<InputSignals>
     public UnityAction OnUseUtilityPressed = delegate { };
     public UnityAction OnUseUtilityCancelled = delegate { };
     public UnityAction<int> OnSwitchUtility = delegate { };
+    
+    
+    public UnityAction<GameObject> PickUp = delegate { };
 }

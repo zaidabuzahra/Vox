@@ -1,5 +1,6 @@
 using Runtime.Player.Gun;
 using UnityEngine;
+using UnityEngine.Events;
 
 [CreateAssetMenu(fileName = "UVLightUtility", menuName = "ScriptableObjects/Utilities/UVLightUtility")]
 public class UVLightUtility : IUtility
