@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class BoilActivator : ChargeObject
@@ -10,6 +11,7 @@ public class BoilActivator : ChargeObject
     [SerializeField, Range(0, 20)] private float underCookedLimit, overCookedLimit;
     [SerializeField] private float progressRate = 1f;
     public bool isFilled;
+    public UnityEvent onCharged;
 
     private void Start()
     {
@@ -19,9 +21,16 @@ public class BoilActivator : ChargeObject
         isCharged = false;
     }
 
+    public void Fill()
+    {
+        isFilled = true;
+        currentCharge = 5;
+    }
+
     public override void OnUpdate()
     {
         base.OnUpdate();
+        currentCharge = Mathf.Clamp(currentCharge, 0, maxCharge);
         heatGaugeSlider.fillAmount = (currentCharge / maxCharge);
         if (isCharged)
         {
@@ -32,6 +41,7 @@ public class BoilActivator : ChargeObject
             {
                 progress = 0;
                 progressBar.color = Color.white;
+                if (boilEffect) boilEffect.Stop();
             }
             else if (currentCharge >= overCookedLimit)
             {
@@ -42,6 +52,12 @@ public class BoilActivator : ChargeObject
             if (progressBar.fillAmount >= 1)
             {
                 plantJuice.Success();
+            }
+            else if (progressBar.fillAmount <= 0)
+            {
+                plantJuice.Fail();
+                onCharged.Invoke();
+                Uncharge();
             }
         }
     }
@@ -56,8 +72,7 @@ public class BoilActivator : ChargeObject
 
     public override void Uncharge()
     {
+        if (progressBar.fillAmount > 0) return;
         base.Uncharge();
-        if (boilEffect) boilEffect.Stop();
-        plantJuice.Fail();
     }
 }

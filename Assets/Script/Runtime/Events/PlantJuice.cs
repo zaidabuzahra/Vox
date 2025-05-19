@@ -1,8 +1,13 @@
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.ProBuilder.MeshOperations;
 
 public class PlantJuice : ChargeObject
 {
     [SerializeField] private BoilActivator boilActivator;
+
+    public UnityEvent onCharged;
+    public UnityEvent notCharged;
 
     private void Start()
     {
@@ -12,10 +17,15 @@ public class PlantJuice : ChargeObject
 
     public override void Charge(float charge)
     {
-        if (charge >= maxCharge - 5) ;
+        if (charge >= maxCharge - 5)
         {
             isCharged = true;
-            boilActivator.isFilled = true;
+            boilActivator.Fill();
+            onCharged?.Invoke();
+        }
+        else
+        {
+            notCharged?.Invoke();
         }
     }
 

@@ -7,6 +7,7 @@ TagManager:
   - Activate
   - ChargeObject
   - Goal
+  - SeedPlant
   layers:
   - Default
   - TransparentFX

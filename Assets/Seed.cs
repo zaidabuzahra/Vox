@@ -3,6 +3,7 @@ using UnityEngine;
 public class Seed : MonoBehaviour
 {
     Vector3 _originalPos;
+    public LauchSeedActivator lauchSeedActivator;
     public void Shoot(Vector3 dir, float power)
     {
         _originalPos = transform.position;
@@ -11,12 +12,16 @@ public class Seed : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        if (other.transform.parent == transform.parent) return;
         GetComponent<Rigidbody>().isKinematic = true;
 
-        if (other.TryGetComponent<LauchSeedActivator>(out LauchSeedActivator ot))
+        if (other.CompareTag("SeedPlant"))
         {
-            transform.SetParent(other.transform);
-            ot.Catch(this);
+            lauchSeedActivator.Remove();
+            transform.SetParent(other.transform.parent);
+            lauchSeedActivator = transform.parent.GetComponentInChildren<LauchSeedActivator>();
+            lauchSeedActivator.Catch(this);
+            transform.position = lauchSeedActivator.shootingDirection.position;
         }
         else if (other.CompareTag("Goal"))
         {
