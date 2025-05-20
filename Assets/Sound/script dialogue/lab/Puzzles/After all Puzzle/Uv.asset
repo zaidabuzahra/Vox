@@ -10,21 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
-  m_Name: Could fell apart
+  m_Name: Uv
   m_EditorClassIdentifier: 
-  title: "You're saying if we don\u2019t act now\u2026 everything we\u2019ve built
-    could fall apart? "
+  title: Please head straight to the garden
   activationType: 0
   priority: 0
-  dialogueClip: {fileID: 8300000, guid: 14db1054552af274297055731ff8b166, type: 3}
+  dialogueClip: {fileID: 8300000, guid: ae21a6d14df56dc4f9e1c0b7706f6d71, type: 3}
   captions:
-  - "Exactly. That\u2019s why you must ascend. Into the Core Integration Chamber.
-    Stabilize it from the ground up. \r\n"
+  - 'Please head straight to the end of the garden. I want you to pick the uv to
+    help us find hidden obstructs.
+
+'
   captionDelays:
-  - 7
-  expectedDuration: 7
+  - 5
+  expectedDuration: 5
   canRespond: 0
   canSkip: 0
   responseDelay: 0
   responseCount: 0
-  responses: []
+  responses:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

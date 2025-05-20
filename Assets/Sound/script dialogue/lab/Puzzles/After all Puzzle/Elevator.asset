@@ -10,21 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
-  m_Name: Could fell apart
+  m_Name: Elevator
   m_EditorClassIdentifier: 
-  title: "You're saying if we don\u2019t act now\u2026 everything we\u2019ve built
-    could fall apart? "
+  title: 'Head to the elevator and it should take you to the Core Integration Chamber.  '
   activationType: 0
   priority: 0
-  dialogueClip: {fileID: 8300000, guid: 14db1054552af274297055731ff8b166, type: 3}
+  dialogueClip: {fileID: 8300000, guid: e303b92041f16034cbc476b4c10c89a0, type: 3}
   captions:
-  - "Exactly. That\u2019s why you must ascend. Into the Core Integration Chamber.
-    Stabilize it from the ground up. \r\n"
+  - "Head to the elevator and it should take you to the Core Integration Chamber.
+    \r\n"
   captionDelays:
-  - 7
-  expectedDuration: 7
+  - 4
+  expectedDuration: 4
   canRespond: 0
   canSkip: 0
   responseDelay: 0
   responseCount: 0
-  responses: []
+  responses:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

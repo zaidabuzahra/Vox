@@ -10,21 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
-  m_Name: Could fell apart
+  m_Name: Core
   m_EditorClassIdentifier: 
-  title: "You're saying if we don\u2019t act now\u2026 everything we\u2019ve built
-    could fall apart? "
+  title: "We\u2019ve made it. The Core Integration Chamber . You feel it, don\u2019t
+    you? The change in the air... in your balance. That\u2019s not just your nerves.
+    That\u2019s the BioEngine\u2019s grip beginning to loosen. "
   activationType: 0
   priority: 0
-  dialogueClip: {fileID: 8300000, guid: 14db1054552af274297055731ff8b166, type: 3}
+  dialogueClip: {fileID: 8300000, guid: ab765b859517b8a47be978dcdfde70a0, type: 3}
   captions:
-  - "Exactly. That\u2019s why you must ascend. Into the Core Integration Chamber.
-    Stabilize it from the ground up. \r\n"
-  captionDelays:
-  - 7
-  expectedDuration: 7
+  - 
+  captionDelays: []
+  expectedDuration: 0
   canRespond: 0
   canSkip: 0
   responseDelay: 0
   responseCount: 0
-  responses: []
+  responses:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
