@@ -37,9 +37,10 @@ Material:
     - MyLightAngle: 30
     - MyMetallic: 0
     - MyStrengthScalor: 50
-    - _Angle: 67
-    - _Gloss: 0.115
-    - _Metal: 0
+    - _Angle: 0
+    - _EdgeWidth: 0.02
+    - _Gloss: 0.442
+    - _Metal: 0.319
     - _Sections: 10
     - _Speed: 3.62
     - _Strength: 50
@@ -48,7 +49,10 @@ Material:
     - MyColor: {r: 1, g: 1, b: 1, a: 1}
     - MyLightDirection: {r: -0, g: 1.0000001, b: 0.00000011920929, a: 0}
     - MyLightPosition: {r: 248.982, g: 11.04, b: 71.471, a: 0}
-    - _Color: {r: 0.9265917, g: 1, b: 0.43867922, a: 1}
+    - _Color: {r: 1, g: 0.24567148, b: 0.07075471, a: 1}
+    - _EdgeColor: {r: 1, g: 0, b: 0, a: 1}
+    - _HiddenColor: {r: 0.2627451, g: 0.2627451, b: 0.2627451, a: 1}
+    - _HidenColor: {r: 0.2627451, g: 0.2627451, b: 0.2627451, a: 1}
     - _LightDir: {r: 0, g: 0, b: 0, a: 0}
     - _LightPos: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

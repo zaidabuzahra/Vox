@@ -3,27 +3,18 @@ using UnityEngine;
 public class SwitchSkybox : MonoBehaviour
 {
     bool isIn;
-    float elapsedTime;
-    float ambientVal;
 
-    private void Update()
+    private void OnTriggerEnter(Collider other)
     {
         if (isIn)
         {
-            elapsedTime += Time.deltaTime;
-            ambientVal = Mathf.Lerp(1, 0, elapsedTime / 1);
-
-            RenderSettings.ambientIntensity = ambientVal;
+            RenderSettings.defaultReflectionMode = UnityEngine.Rendering.DefaultReflectionMode.Skybox;
+            RenderSettings.ambientIntensity = 0.35f;
+            isIn = false;
+            return;
         }
-    }
-    private void OnTriggerEnter(Collider other)
-    {
         RenderSettings.defaultReflectionMode = UnityEngine.Rendering.DefaultReflectionMode.Custom;
+        RenderSettings.ambientIntensity = 0;
         isIn = true;
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        //RenderSettings.defaultReflectionMode = UnityEngine.Rendering.DefaultReflectionMode.Skybox;
-        //RenderSettings.ambientIntensity = 0.35f;
     }
 }

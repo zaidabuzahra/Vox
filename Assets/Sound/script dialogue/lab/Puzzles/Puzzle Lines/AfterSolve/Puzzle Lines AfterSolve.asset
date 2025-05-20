@@ -15,7 +15,7 @@ MonoBehaviour:
   title: "Ahhha\u2026 a spark of you has returned. Just as I hoped. Like I told you,
     Orion "
   activationType: 0
-  priority: 0
+  priority: 1
   dialogueClip: {fileID: 8300000, guid: e5e582ff9da6c0f4f97c791d96cda033, type: 3}
   captions:
   - "Ahhha\u2026 a spark of you has returned. Just as I hoped. Like I told you, Orion

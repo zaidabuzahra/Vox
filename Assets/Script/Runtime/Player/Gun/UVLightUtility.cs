@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class UVLightUtility : IUtility
 {
     // Utility methods
-    [SerializeField] private GameObject uvLight;
+    [SerializeField] public GameObject uvLight;
     [SerializeField] private Material liquidMaterial;
 
     private void Update()

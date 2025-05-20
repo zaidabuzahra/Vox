@@ -9,7 +9,11 @@ public class DialogueTrigger : MonoBehaviour
         if (dialogue.activationType != DialogueActivationType.Trigger) return;
         if (other.CompareTag("Player"))
         {
-            DialogueManager.Instance.RequestPlayDialogue(dialogue);
+            Request();
         }
+    }
+    public void Request()
+    {
+        DialogueManager.Instance.RequestPlayDialogue(dialogue);
     }
 }

@@ -18498,6 +18498,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7793455107787601112, guid: 634210c67c48a8144880722bd202de43, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1549094411}
+    - targetCorrespondingSourceObject: {fileID: 7793455107787601112, guid: 634210c67c48a8144880722bd202de43, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1549094412}
   m_SourcePrefab: {fileID: 100100000, guid: 634210c67c48a8144880722bd202de43, type: 3}
 --- !u!114 &647855720 stripped
 MonoBehaviour:
@@ -52166,6 +52169,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 669582607001191707, guid: 45702c7f62b046647958154c214ea258, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1446539350}
+    - targetCorrespondingSourceObject: {fileID: 669582607001191707, guid: 45702c7f62b046647958154c214ea258, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1446539352}
     - targetCorrespondingSourceObject: {fileID: 3977408124843734602, guid: 45702c7f62b046647958154c214ea258, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2061970745}
@@ -52262,6 +52268,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1446539352}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: Request
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1446539352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446539346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c531a7d6794967489853514f6a3f481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 11400000, guid: f447ffe9fb438c2478d78abce09b2db0, type: 2}
 --- !u!1 &1465082315
 GameObject:
   m_ObjectHideFlags: 0
@@ -57969,6 +58000,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1549094412}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: Request
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1549094412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549094408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c531a7d6794967489853514f6a3f481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 11400000, guid: 029b9579916db7640b0979f18e3bbbfb, type: 2}
 --- !u!1 &1549754874 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4788036112578225046, guid: aca32762ec4d2ac428c50c5688bd7e2c, type: 3}
