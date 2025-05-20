@@ -21,9 +21,9 @@ MonoBehaviour:
   - 'You know we were partners once. Dreamers. Builders of a better world. And now... '
   - 'no matter we still have a chance to finish what we started. '
   captionDelays:
+  - 8
   - 6
-  - 5
-  expectedDuration: 14
+  expectedDuration: 15
   canRespond: 0
   canSkip: 1
   responseDelay: 0

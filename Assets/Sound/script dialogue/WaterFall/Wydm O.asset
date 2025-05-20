@@ -22,7 +22,7 @@ MonoBehaviour:
   captionDelays:
   - 10
   expectedDuration: 10
-  canRespond: 1
+  canRespond: 0
   canSkip: 0
   responseDelay: 0
   responseCount: 0

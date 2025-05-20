@@ -20,16 +20,7 @@ MonoBehaviour:
   - "Time... is difficult to measure, Orion. Your body has been dormant for years.Your
     mind? Even longer, I fear.\r"
   captionDelays:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 12
   expectedDuration: 12
   canRespond: 0
   canSkip: 1

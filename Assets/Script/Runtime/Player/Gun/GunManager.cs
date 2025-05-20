@@ -122,6 +122,8 @@ public class GunManager : MonoBehaviour
 
         _currentUtility = utilities[_currentUtilityIndex];
         _currentUtility.Equip();
+        if (_currentUtility.GetComponent<ActivatorUtility>()) utilitySlider.gameObject.SetActive(true);
+        else utilitySlider.gameObject.SetActive(false);
         yield return new WaitForSeconds(_utilityEquipCooldown);
         _canUseUtility = true;
     }
@@ -157,6 +159,8 @@ public class GunManager : MonoBehaviour
         {
             InputSignals.Instance.PickUp?.Invoke(utility);
         }
+        if (utility.GetComponent<ActivatorUtility>()) utilitySlider.gameObject.SetActive(true);
+
         utilities[_maxUtilityIndex] = utility.GetComponent<IUtility>();
         if (_currentUtility != null)
         {

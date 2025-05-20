@@ -8,7 +8,13 @@ public class Cutsceneactivation : MonoBehaviour
 
     private bool hasPlayed = false;
 
-    private void OnTriggerEnter(Collider other)
+    public void Play()
+    {
+        timelineDirector.Play();
+        Destroy(this);
+
+    }
+    /*private void OnTriggerEnter(Collider other)
     {
         if (!hasPlayed && other.CompareTag("Player"))
         {
@@ -27,5 +33,5 @@ public class Cutsceneactivation : MonoBehaviour
 
         if (playerController != null)
             playerController.enabled = true;
-    }
+    }*/
 }

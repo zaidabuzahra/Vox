@@ -21,19 +21,11 @@ MonoBehaviour:
   - "the lab I will show you our creation the bioengine, the Garden... they\u2019ll 
     help you remember who you truly are.\r\n"
   captionDelays:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  expectedDuration: 10
-  canRespond: 1
-  canSkip: 1
+  - 5
+  - 7
+  expectedDuration: 14
+  canRespond: 0
+  canSkip: 0
   responseDelay: 0
   responseCount: 0
   responses: []

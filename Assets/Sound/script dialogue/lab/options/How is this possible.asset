@@ -32,10 +32,12 @@ MonoBehaviour:
   - 5.5
   - 5.5
   - 5.5
-  expectedDuration: 6
+  expectedDuration: 27.5
   canRespond: 1
   canSkip: 0
   responseDelay: 0
-  responseCount: 1
+  responseCount: 3
   responses:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 366260d76dc379347ba8937eff19fa94, type: 2}
+  - {fileID: 11400000, guid: 36cf884143ce9c64c9604518e7ffcff3, type: 2}
+  - {fileID: 11400000, guid: 05a5e5c566ad6c94b94cf164d6913ab0, type: 2}
