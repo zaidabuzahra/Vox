@@ -37,8 +37,8 @@ Material:
     - MyLightAngle: 30
     - MyMetallic: 0
     - MyStrengthScalor: 50
-    - _Angle: 0
-    - _Gloss: 0
+    - _Angle: 67
+    - _Gloss: 0.115
     - _Metal: 0
     - _Sections: 10
     - _Speed: 3.62

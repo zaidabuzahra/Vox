@@ -2,11 +2,10 @@ using UnityEngine;
 
 public class Seed : MonoBehaviour
 {
-    Vector3 _originalPos;
     public LauchSeedActivator lauchSeedActivator;
+    public PuzzleManager puzzleManager;
     public void Shoot(Vector3 dir, float power)
     {
-        _originalPos = transform.position;
         GetComponent<Rigidbody>().isKinematic = false;
         GetComponent<Rigidbody>().AddForce(dir * power, ForceMode.Impulse);
     }
@@ -26,11 +25,14 @@ public class Seed : MonoBehaviour
         else if (other.CompareTag("Goal"))
         {
             //finish puzzle
+            puzzleManager.SolvePart();
+            lauchSeedActivator.Remove();
+            Destroy(gameObject);
 
         }
         else
         {
-            transform.position = _originalPos;
+            transform.position = lauchSeedActivator.shootingDirection.position;
         }
     }
 }
