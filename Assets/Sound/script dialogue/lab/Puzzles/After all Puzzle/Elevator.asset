@@ -26,7 +26,4 @@ MonoBehaviour:
   canSkip: 0
   responseDelay: 0
   responseCount: 0
-  responses:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  responses: []

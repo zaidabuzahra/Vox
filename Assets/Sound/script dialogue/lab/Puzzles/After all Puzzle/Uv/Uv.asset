@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: Uv
+  m_EditorClassIdentifier: 
+  title: Please head straight to the garden
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: ae21a6d14df56dc4f9e1c0b7706f6d71, type: 3}
+  captions:
+  - 'Please head straight to the end of the garden. I want you to pick the uv to
+    help us find hidden obstructs.
+
+'
+  captionDelays:
+  - 5
+  expectedDuration: 5
+  canRespond: 1
+  canSkip: 0
+  responseDelay: 0
+  responseCount: 1
+  responses:
+  - {fileID: 11400000, guid: 690ffe47eec662e4e9d1d344d8134826, type: 2}

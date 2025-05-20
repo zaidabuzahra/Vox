@@ -17,9 +17,18 @@ MonoBehaviour:
   activationType: 0
   priority: 0
   dialogueClip: {fileID: 8300000, guid: b02dbe1bc1e92fc43b80457da95fbf69, type: 3}
-  captions: []
-  captionDelays: []
-  expectedDuration: 0
+  captions:
+  - "Orion... I understand your frustration. You\u2019re overwhelmed. Confused. The
+    memories... they come back unevenly.\r\n"
+  - "But suspicion? From you? After all we\u2019ve done together?\r\n"
+  - Truth is a heavy thing. You were never meant to carry it all at once. But fine.
+    Restore the core  and I will tell you everything. No riddles. No poetry. Just...
+    the truth
+  captionDelays:
+  - 10
+  - 7
+  - 12
+  expectedDuration: 30
   canRespond: 0
   canSkip: 0
   responseDelay: 0
