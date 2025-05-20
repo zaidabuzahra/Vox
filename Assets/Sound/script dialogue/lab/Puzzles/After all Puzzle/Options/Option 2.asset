@@ -16,9 +16,23 @@ MonoBehaviour:
   activationType: 0
   priority: 0
   dialogueClip: {fileID: 8300000, guid: acfee30845bf34042953f726bb2ff891, type: 3}
-  captions: []
-  captionDelays: []
-  expectedDuration: 0
+  captions:
+  - 'Good. I knew I could still count on you, Orion.
+
+    You were built for this
+    shaped by purpose, tempered by brilliance. '
+  - ' We are not just rebuilding a machine we are rewriting the rules of life itself.
+    Now go. The core awaits. And with it... our future.
+
+    
+
+    
+
+'
+  captionDelays:
+  - 12
+  - 12
+  expectedDuration: 24
   canRespond: 0
   canSkip: 0
   responseDelay: 0

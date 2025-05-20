@@ -21,14 +21,9 @@ MonoBehaviour:
   captions:
   - Remember Orion this is our work at stake and not only that humanity's future
     as well.
-  - 'Please head straight to the end of the garden. I want you to pick the uv to
-    help us find hidden obstructs.
-
-'
   captionDelays:
-  - 2.5
-  - 4
-  expectedDuration: 7
+  - 5
+  expectedDuration: 5
   canRespond: 0
   canSkip: 0
   responseDelay: 0

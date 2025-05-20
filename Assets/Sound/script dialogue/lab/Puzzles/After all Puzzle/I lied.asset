@@ -18,12 +18,21 @@ MonoBehaviour:
   activationType: 0
   priority: 0
   dialogueClip: {fileID: 8300000, guid: c8700ccb80422114cbd31d2e585887ca, type: 3}
-  captions: []
-  captionDelays: []
-  expectedDuration: 0
+  captions:
+  - "There\u2019s something I never told you, Orion... not fully.\r\n"
+  - "The Garden this whole sanctuary you\u2019ve walked through  was never grounded.
+    Not truly.\r\n"
+  - 'What you felt as ''gravity''... was an illusion. A beautifully engineered lie.
+
+'
+  captionDelays:
+  - 5
+  - 5
+  - 6
+  expectedDuration: 16
   canRespond: 1
   canSkip: 0
   responseDelay: 0
   responseCount: 1
   responses:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 01e13d8059f0128439064373ece465b3, type: 2}

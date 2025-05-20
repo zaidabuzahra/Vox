@@ -16,8 +16,36 @@ MonoBehaviour:
   activationType: 0
   priority: 0
   dialogueClip: {fileID: 8300000, guid: 4550cdb801e072745b07e1ce37bb9716, type: 3}
-  captions: []
-  captionDelays: []
+  captions:
+  - 'Oh, it was real. But not natural.
+
+    The BioEngine created an artificial
+    gravity field, tailored for ideal botanical growth.'
+  - 'Weightless air. Weightless life.
+
+    Gravity  when removed allows nature to
+    stretch its design. Freely. Exponentially.
+
+'
+  - "In microgravity, roots no longer dig they search. Stems don\u2019t stand they
+    spiral toward synthetic light."
+  - Left unchecked, photosynthesis becomes erratic. But with artificial gravity and
+    light modulation, we sculpted a controlled biosphere.
+  - "Plants grew ten times faster. Oxygen density increased. Ecosystems behaved\u2026
+    like orchestras under a conductor.\r\n"
+  - "But now, the Core is destabilizing. If it fails, the gravity field collapses.\r\n
+    And when gravity goes\u2026 so does everything else.\r\n"
+  - "You\u2019ll need the tool hovering before you. We called it the A.G.E. Device
+    Artificial Gravitational Equalizer. But you just called it the Gravity Gun. Take
+    it.\r\n"
+  captionDelays:
+  - 10
+  - 10
+  - 10
+  - 10
+  - 10
+  - 10
+  - 10
   expectedDuration: 0
   canRespond: 0
   canSkip: 0
