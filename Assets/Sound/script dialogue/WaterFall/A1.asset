@@ -20,8 +20,8 @@ MonoBehaviour:
   - "Can you hear me? Hello? Come on... wake up!\r\n\r"
   captionDelays:
   - 8
-  expectedDuration: 8
-  canRespond: 1
+  expectedDuration: 9
+  canRespond: 0
   canSkip: 1
   responseDelay: 0
   responseCount: 1
