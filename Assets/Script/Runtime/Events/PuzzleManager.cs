@@ -14,4 +14,12 @@ public class PuzzleManager : MonoBehaviour
             resolvedPuzzle.Invoke();
         }
     }
+    public void UnsolvePart()
+    {
+        currentPuzzleIndex--;
+        if (currentPuzzleIndex < 0)
+        {
+            currentPuzzleIndex = 0;
+        }
+    }
 }

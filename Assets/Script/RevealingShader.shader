@@ -1,14 +1,17 @@
-Shader "Custom/RevealUnderLight_URP"
+Shader "Custom/RevealUnderLight_URP_WithEdges"
 {
     Properties
     {
         _BaseMap ("Albedo", 2D) = "white" {}
-        _Color   ("Tint Color", Color) = (1,1,1,1)
-        _Gloss   ("Smoothness", Range(0,1)) = 0.5
-        _Metal   ("Metallic", Range(0,1)) = 0.0
+        _Color ("Tint Color", Color) = (1,1,1,1)
+        _HidenColor ("Hiden Color", Color) = (1,1,1,1)
+        _EdgeColor ("Edge Highlight Color", Color) = (1,0,0,1) // New property for edge color
+        _EdgeWidth ("Edge Width", Range(0, 1)) = 0.02 // Controls how thick the edge highlight is
+        _Gloss ("Smoothness", Range(0,1)) = 0.5
+        _Metal ("Metallic", Range(0,1)) = 0.0
         _LightPos("Light Position", Vector) = (0,0,0,0)
         _LightDir("Light Direction", Vector) = (0,0,1,0)
-        _Angle   ("Light Angle", Range(0,180)) = 45
+        _Angle ("Light Angle", Range(0,180)) = 45
         _Strength("Strength", Float) = 50
         _Sections ("Sections", Range(0, 10)) = 0
         _Speed ("Speed", Range(0, 10)) = 0
@@ -37,58 +40,74 @@ Shader "Custom/RevealUnderLight_URP"
             SAMPLER(sampler_BaseMap);
 
             float4 _Color;
+            float4 _HidenColor;
+            float4 _EdgeColor; // New edge color
+            float _EdgeWidth; // New edge width
             float4 _LightPos;
             float4 _LightDir;
-            float  _Angle;
-            float  _Strength;
-            float  _Gloss;
-            float  _Metal;
+            float _Angle;
+            float _Strength;
+            float _Gloss;
+            float _Metal;
             float _Sections;
             float _Speed;
 
             struct Attributes
             {
                 float3 positionOS : POSITION;
-                float2 uv         : TEXCOORD0;
+                float2 uv : TEXCOORD0;
+                float3 normalOS : NORMAL; // Added for edge detection
             };
 
             struct Varyings
             {
                 float4 positionCS : SV_POSITION;
-                float2 uv         : TEXCOORD0;
-                float3 worldPos   : TEXCOORD1;
+                float2 uv : TEXCOORD0;
+                float3 worldPos : TEXCOORD1;
+                float3 worldNormal : TEXCOORD2; // Added for edge detection
             };
 
             Varyings vert(Attributes v)
             {
                 Varyings o;
                 o.positionCS = TransformObjectToHClip(v.positionOS);
-                o.uv         = v.uv;
-                o.worldPos   = TransformObjectToWorld(v.positionOS);
+                o.uv = v.uv;
+                o.worldPos = TransformObjectToWorld(v.positionOS);
+                o.worldNormal = TransformObjectToWorldNormal(v.normalOS); // Transform normal to world space
                 return o;
             }
 
             half4 frag(Varyings i) : SV_Target
             {
-                // sample albedo
-                float4 albedo = _Color * SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap, i.uv);
-
-                // compute reveal strength
+                float4 albedo = _HidenColor * SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap, i.uv);
+            
+                // Compute light-based reveal strength
                 float3 direction = normalize(_LightPos.xyz - i.worldPos);
-                //float  cosAngle = dot(direction, normalize(_LightDir.xyz));
-                //float  threshold = cos(_Angle * 3.14 / 180.0);
-                //float  reveal = saturate((cosAngle - threshold) * _Strength);
                 float scale = dot(direction, _LightDir.xyz);
-			    float strength = scale - cos(_Angle * (3.14 / 360.0));
-			    strength = min(max(strength * _Strength, 0), 1);
-
-                // lighting (you could plug into URP lighting functions here if desired)
-                float3 emission = albedo.rgb * albedo.a * strength;
+                float strength = scale - cos(_Angle * (3.14 / 360.0));
+                strength = saturate(strength * _Strength);
+            
+                // Stripe effect only for hidden areas
+                float stripeMask = clamp(abs(tan((i.uv.x + _Time.x * _Speed) * _Sections)), 0, 1);
+            
+                // Final color blending
+                float3 hiddenColor = _Color.rgb * stripeMask;
+                float hiddenAlpha = _Color.a * stripeMask;
+            
+                float3 finalColor = lerp(albedo.rgb, hiddenColor, strength);
+                float finalAlpha = lerp(albedo.a, hiddenAlpha, strength);
                 
-                float4 tanCol = clamp(abs(tan((i.uv.x + _Time.x * _Speed) * _Sections)), 0, 1);
-                tanCol *= _Color;
-                return half4(albedo.rgb * strength, albedo.a * strength) * tanCol + half4(emission, 0);
+                // Edge detection based on normal facing
+                float3 viewDir = normalize(_WorldSpaceCameraPos - i.worldPos);
+                float edge = 1 - abs(dot(i.worldNormal, viewDir));
+                edge = smoothstep(1 - _EdgeWidth, 1.0, edge);
+                
+                // Combine edge with final color
+                finalColor = lerp(finalColor, _EdgeColor.rgb, edge * _EdgeColor.a);
+                
+                return half4(finalColor, finalAlpha);
             }
+
             ENDHLSL
         }
     }

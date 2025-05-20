@@ -1,10 +1,26 @@
 ﻿//Shady
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class Reveal : MonoBehaviour
 {
     [SerializeField] Material Mat;
     [SerializeField] Light SpotLight;
+
+    private void Start()
+    {
+        UVLightUtility utility = FindFirstObjectByType<UVLightUtility>();
+        if (utility != null)
+        {
+            SpotLight = utility.uvLight.GetComponent<Light>();
+        }
+        Debug.Log(InputSignals.Instance);
+        if (SpotLight == null && InputSignals.Instance != null)
+        {
+            Debug.LogWarning("ENTERED" + gameObject.name);
+            InputSignals.Instance.PickUp += PickUp;
+        }
+    }
 
     void Update()
     {
@@ -21,17 +37,10 @@ public class Reveal : MonoBehaviour
         Mat.SetFloat("_Angle", SpotLight.spotAngle); 
     }
 
-    private void PickUp(GameObject uv) => SpotLight = uv.GetComponent<UVLightUtility>().gameObject.GetComponentInChildren<Light>();
-    private void OnEnable()
+    private void PickUp(GameObject uv)
     {
-        UVLightUtility utility = FindFirstObjectByType<UVLightUtility>();
-        if (utility != null)
-        {
-            SpotLight = utility.gameObject.GetComponentInChildren<Light>();
-        }
-        if (SpotLight == null)
-        {
-            InputSignals.Instance.PickUp += PickUp;
-        }
+        Debug.LogWarning("ENTERED FUNCTION: " + gameObject.name);
+
+        this.SpotLight = uv.GetComponent<UVLightUtility>().uvLight.GetComponent<Light>();
     }
 }

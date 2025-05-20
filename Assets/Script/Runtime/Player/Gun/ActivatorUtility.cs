@@ -1,5 +1,6 @@
 using DG.Tweening;
 using Runtime.Player.Gun;
+using TMPro.EditorUtilities;
 using UnityEngine;
 
 public class ActivatorUtility : IUtility
@@ -10,15 +11,31 @@ public class ActivatorUtility : IUtility
     [SerializeField, Range(0f, 0.1f)] private float scaleSpeed;
     [SerializeField, Range(1f, 10f)] private float chargeSpeed;
 
+    [SerializeField] private LineRenderer lineRenderer;
+
     private float _chargedEnergy;
+    private Camera _cam;
 
     private void Start()
     {
         stopUtility = true;
+        _cam = Camera.main;
     }
 
     private void Update()
     {
+        lineRenderer.SetPosition(0, gunPoint.position);
+        Ray ray = new Ray(gunPoint.position, gunPoint.forward);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
+        {
+            lineRenderer.enabled = true;
+            lineRenderer.SetPosition(1, hit.point);
+        }
+        else
+        {
+            lineRenderer.enabled = false;
+        }
         if (isActive)
         {
             Charge();
@@ -28,6 +45,7 @@ public class ActivatorUtility : IUtility
     public override void Equip()
     {
         //throw new System.NotImplementedException();
+        lineRenderer.enabled = true;
         gameObject.SetActive(true);
         animator.SetBool("Equip", true);
     }
@@ -53,6 +71,8 @@ public class ActivatorUtility : IUtility
 
     public override void Unequip()
     {
+        lineRenderer.enabled = false;
+
         animator.SetBool("Equip", false);
         StopUtility();
         //throw new System.NotImplementedException();
@@ -60,6 +80,7 @@ public class ActivatorUtility : IUtility
 
     public override void UseUtility()
     {
+        lineRenderer.enabled = true;
         isActive = true;
         _chargedEnergy = 0;
         chargedShot.SetActive(true);

@@ -153,6 +153,10 @@ public class GunManager : MonoBehaviour
         _maxUtilityIndex++;
         _currentUtilityIndex = _maxUtilityIndex;
 
+        if (utility.GetComponent<UVLightUtility>())
+        {
+            InputSignals.Instance.PickUp?.Invoke(utility);
+        }
         utilities[_maxUtilityIndex] = utility.GetComponent<IUtility>();
         if (_currentUtility != null)
         {
