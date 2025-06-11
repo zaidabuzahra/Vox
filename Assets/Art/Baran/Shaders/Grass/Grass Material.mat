@@ -24,7 +24,8 @@ Material:
   m_Shader: {fileID: -6465566751694194690, guid: a571db0a0f58d9e499be8b121d712bda, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _USETERRAINCOLOR
   m_InvalidKeywords:
   - _ALPHAPREMULTIPLY_ON
   - _SURFACE_TYPE_TRANSPARENT
@@ -120,7 +121,7 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _HeightBlend: 1.5
+    - _HeightBlend: 2.7
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
@@ -135,7 +136,7 @@ Material:
     - _Surface: 1
     - _TerrainOffset: -5.85
     - _TerrainSize: -143.8
-    - _USETERRAINCOLOR: 0
+    - _USETERRAINCOLOR: 1
     - _UseTerrainColor: 0
     - _WindInstensity: 0.22
     - _WindSpeed: 0.1
@@ -143,15 +144,15 @@ Material:
     - _ZWrite: 0
     m_Colors:
     - _BaseColor: {r: 0.17647058, g: 0.6114883, b: 0.7647059, a: 1}
-    - _BottomColor: {r: 0.08302595, g: 0.08679241, b: 0.0834026, a: 0}
+    - _BottomColor: {r: 0.13725491, g: 0.27058825, b: 0.18431373, a: 1}
     - _Color: {r: 0.22811663, g: 0.60754704, b: 0.23950487, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FarColor: {r: 0, g: 0, b: 0, a: 0}
+    - _FarColor: {r: 0.094117604, g: 0.21960783, b: 0.15294114, a: 1}
     - _NearColor: {r: 0, g: 0, b: 0, a: 1}
     - _NearFarRange: {r: 21.4, g: 3.5, b: 0, a: 0}
-    - _ShadowColor: {r: 0.19764334, g: 0.20838244, b: 0.21509439, a: 0}
+    - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Terrainffes: {r: 2.27, g: 0.1, b: 0, a: 0}
-    - _color: {r: 0, g: 0, b: 0, a: 1}
+    - _color: {r: 0.4862745, g: 0.8666667, b: 0.62943125, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

@@ -40,7 +40,7 @@ Material:
     - _CircleSize: 0.81
     - _CircleVisibility: 0.3
     - _GlitchStrength: 3.85
-    - _NoiseAmount: 30
+    - _NoiseAmount: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
