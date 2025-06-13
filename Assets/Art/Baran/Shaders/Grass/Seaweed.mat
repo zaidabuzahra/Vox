@@ -121,7 +121,7 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _HeightBlend: 2.7
+    - _HeightBlend: 0.75
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
@@ -138,8 +138,8 @@ Material:
     - _TerrainSize: -139.5
     - _USETERRAINCOLOR: 1
     - _UseTerrainColor: 0
-    - _WindInstensity: 1
-    - _WindSpeed: 0.1
+    - _WindInstensity: 0.1
+    - _WindSpeed: 0.5
     - _WorkflowMode: 1
     - _ZWrite: 0
     m_Colors:
