@@ -104,7 +104,7 @@ Material:
     m_Floats:
     - _AddPrecomputedVelocity: 0
     - _AlphaClip: 1
-    - _AlphaThreshold: 0.5
+    - _AlphaThreshold: -0.41
     - _AlphaToMask: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
@@ -128,31 +128,31 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: -0.23
+    - _Smoothness: 1.03
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 1
     - _TerrainOffset: -5.85
-    - _TerrainSize: -143.8
+    - _TerrainSize: -139.5
     - _USETERRAINCOLOR: 1
     - _UseTerrainColor: 0
-    - _WindInstensity: 0.22
+    - _WindInstensity: 1
     - _WindSpeed: 0.1
     - _WorkflowMode: 1
     - _ZWrite: 0
     m_Colors:
     - _BaseColor: {r: 0.17647058, g: 0.6114883, b: 0.7647059, a: 1}
-    - _BottomColor: {r: 0.13725491, g: 0.27058825, b: 0.18431373, a: 1}
+    - _BottomColor: {r: 0.24390353, g: 0.36498037, b: 0.5943396, a: 1}
     - _Color: {r: 0.22811663, g: 0.60754704, b: 0.23950487, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FarColor: {r: 0.094117604, g: 0.21960783, b: 0.15294114, a: 1}
+    - _FarColor: {r: 0, g: 0.8339977, b: 1, a: 1}
     - _NearColor: {r: 0, g: 0, b: 0, a: 1}
     - _NearFarRange: {r: 21.4, g: 3.5, b: 0, a: 0}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Terrainffes: {r: 2.27, g: 0.1, b: 0, a: 0}
-    - _color: {r: 0.4862745, g: 0.8666667, b: 0.62943125, a: 1}
+    - _color: {r: 0, g: 0.8897755, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
