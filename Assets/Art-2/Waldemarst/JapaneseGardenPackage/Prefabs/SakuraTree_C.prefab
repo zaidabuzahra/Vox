@@ -65,8 +65,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 21042846256580822}
-  - {fileID: 21534379484561574}
+  - {fileID: -876546973899608171, guid: 3b0146468dab5054fbaa8c2459296a70, type: 3}
+  - {fileID: 21282259923909250, guid: 9d642dd3a2ff904da90e9417ae5cddec, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -164,11 +164,11 @@ LODGroup:
   - screenRelativeHeight: 0.20000002
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 9107284550132531716}
+    - renderer: {fileID: 5455561933507632464}
   - screenRelativeHeight: 0
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 3540332046329933968}
+    - renderer: {fileID: 5455561933507632464}
   m_Enabled: 1
 --- !u!1 &6033167757616950822
 GameObject:
@@ -188,7 +188,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9018967178453463522
 Transform:
   m_ObjectHideFlags: 0
@@ -294,7 +294,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1916211997445753325
 Transform:
   m_ObjectHideFlags: 0
