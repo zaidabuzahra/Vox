@@ -51,7 +51,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 95f99e2cedb42c6469214632b01993a2, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 4d6ae5add5ed7b443bc3bb07131abd5d, type: 2}
+      objectReference: {fileID: 2100000, guid: 897ab98613ed3f047a6af766cdd24453, type: 2}
     - target: {fileID: 919132149155446097, guid: 95f99e2cedb42c6469214632b01993a2, type: 3}
       propertyPath: m_Name
       value: Dandilion
