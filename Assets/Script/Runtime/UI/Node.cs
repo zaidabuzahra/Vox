@@ -26,6 +26,7 @@ public class Node : MonoBehaviour
     [Header("Connections")]
     public Direction[] ports = new Direction[2];
     public bool isSource = false;
+    public bool isEnd = false;
 
     [Header("Visuals")]
     public Image nodeImage;
@@ -85,6 +86,7 @@ public class Node : MonoBehaviour
 
     public void UpdatePower()
     {
+        if (isEnd) return;
         if (isSource)
         {
             PropagatePower();

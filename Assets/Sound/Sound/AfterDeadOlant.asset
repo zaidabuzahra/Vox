@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: After Dead Plant
   activationType: 0
-  priority: 0
+  priority: 1
   dialogueClip: {fileID: 8300000, guid: 8774d448cc869b241b18e81eea5e7853, type: 3}
   captions:
   - "Photosynthesis down to twenty percent. Root conductivity has collapsed. These

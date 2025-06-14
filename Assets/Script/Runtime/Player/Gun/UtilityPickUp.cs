@@ -18,12 +18,18 @@ namespace Runtime.Player.Gun
         public void PickUpUtility()
         {
             Debug.Log("Utility Picked Up");
+            gunManager = FindFirstObjectByType<GunManager>();
             if (gunManager != null)
             {
                 Debug.Log("Utility Added to GunManager");
                 gunManager.AddUtility(utility);
                 Destroy(gameObject);
             }
+        }
+        private void OnEnable()
+        {
+            PickUpUtility();
+            Destroy(this);
         }
     }
 }
