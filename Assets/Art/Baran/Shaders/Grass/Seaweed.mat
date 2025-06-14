@@ -144,15 +144,15 @@ Material:
     - _ZWrite: 0
     m_Colors:
     - _BaseColor: {r: 0.17647058, g: 0.6114883, b: 0.7647059, a: 1}
-    - _BottomColor: {r: 0.24390353, g: 0.36498037, b: 0.5943396, a: 1}
+    - _BottomColor: {r: 0.2816975, g: 1, b: 0, a: 1}
     - _Color: {r: 0.22811663, g: 0.60754704, b: 0.23950487, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FarColor: {r: 0, g: 0.8339977, b: 1, a: 1}
+    - _FarColor: {r: 0.05724919, g: 1, b: 0, a: 1}
     - _NearColor: {r: 0, g: 0, b: 0, a: 1}
     - _NearFarRange: {r: 21.4, g: 3.5, b: 0, a: 0}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Terrainffes: {r: 2.27, g: 0.1, b: 0, a: 0}
-    - _color: {r: 0, g: 0.8897755, b: 1, a: 1}
+    - _color: {r: 0, g: 1, b: 0.033422947, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
