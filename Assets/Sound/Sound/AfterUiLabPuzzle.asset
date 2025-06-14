@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: AfterUiLabPuzzle
+  m_EditorClassIdentifier: 
+  title: AfterUIPuzleLab
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: e2dc35c51219c2d43919288df26a604f, type: 3}
+  captions:
+  - "Sector 3\u2019s showing\u2026 rapid overgrowth. Plant DNA\u2019s mutating. No
+    central signal compliance. That\u2019s not supposed to happen.\r"
+  - "I designed those zones to evolve under strict logic. If they\u2019ve grown beyond
+    it\u2026 that means the BioEngine isn\u2019t guiding anymore.It\u2019s reacting.\r\n"
+  - "There\u2019s only one way to know for certain. Come, rion. We\u2019re going
+    back to the Garden.\r\n"
+  captionDelays:
+  - 10
+  - 9
+  - 5
+  expectedDuration: 24
+  canRespond: 0
+  canSkip: 0
+  responseDelay: 0
+  responseCount: 0
+  responses:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

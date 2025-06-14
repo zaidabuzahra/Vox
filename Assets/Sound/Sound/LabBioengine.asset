@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: LabBioengine
+  m_EditorClassIdentifier: 
+  title: LabBioengine
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: 6d50a957ad4cd7b4ca24582467b298eb, type: 3}
+  captions:
+  - "We\u2019re almost there.\r\n"
+  - "\r The bioengine\n"
+  captionDelays:
+  - 1
+  - 3
+  expectedDuration: 4
+  canRespond: 0
+  canSkip: 0
+  responseDelay: 0
+  responseCount: 0
+  responses:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

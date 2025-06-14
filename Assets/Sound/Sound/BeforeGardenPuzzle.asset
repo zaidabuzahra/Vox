@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: BeforeGardenPuzzle
+  m_EditorClassIdentifier: 
+  title: BeforeGardenPuzzle
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: 5afadb2391cffb242b066bc4531afac7, type: 3}
+  captions:
+  - "This sector\u2019s breaking away from the system.\r"
+  - "No. We stop it here. No more resets. No more decay. We fix this.\r\n\r"
+  captionDelays:
+  - 2
+  - 4
+  expectedDuration: 7
+  canRespond: 0
+  canSkip: 0
+  responseDelay: 0
+  responseCount: 3
+  responses:
+  - {fileID: 11400000, guid: 57a03e30e219ac147ad323966dc322db, type: 2}
+  - {fileID: 11400000, guid: 9d8d18ae67c8dc1429e118773644b322, type: 2}
+  - {fileID: 11400000, guid: f76b6d39fa48ce34eb917f5881a86e4e, type: 2}

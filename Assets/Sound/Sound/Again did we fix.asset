@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: Again did we fix
+  m_EditorClassIdentifier: 
+  title: BeforeGardenPuzzle
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: 8352bf6c67a73aa47a79572cbbad1aee, type: 3}
+  captions:
+  - Again?! Orion check the systems. Did we fix it?
+  - "It seems we cleared the anomaly in Sector 3. So we did something\u2026\r\n"
+  - "What about the waterfall? Did we finally extend the BioEngine\u2019s reach?\r"
+  - "Strange\u2026 The roots haven\u2019t reached the waterfall. And yet it\u2019s
+    alive. Thriving. Blooming like the system is working for some reason.\r\n\r"
+  - "No signal\u2026 but clear results? That shouldn\u2019t be possible. Unless\u2026
+    the BioEngine\u2019s effect has become indirect. Ambient, maybe.\r\n\r\n"
+  - "\rWe need to investigate further.\r                                                   
+    How do you propose we proceed, Orion?\r\n\n\r\n"
+  captionDelays:
+  - 7
+  - 4.5
+  - 4
+  - 9
+  - 9
+  - 5
+  expectedDuration: 40
+  canRespond: 1
+  canSkip: 0
+  responseDelay: 0
+  responseCount: 2
+  responses:
+  - {fileID: 11400000, guid: b3f2044f9eb3f6847a9c62803aa19a04, type: 2}
+  - {fileID: 11400000, guid: c433ef7a007b04e4daf75ad889c83578, type: 2}

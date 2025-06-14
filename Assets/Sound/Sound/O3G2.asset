@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: O3G2
+  m_EditorClassIdentifier: 
+  title: what if the bioengine rebelled
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: a7a6e87971ca63a42b780357980a7ef2, type: 3}
+  captions:
+  - "We forced it to be perfect\u2026 of course it rebelled.\r"
+  - "We tried to build something that never breaks.  But the more we demanded perfection,
+    the more fragile it became. \r\n"
+  captionDelays:
+  - 2
+  - 8
+  expectedDuration: 11
+  canRespond: 0
+  canSkip: 0
+  responseDelay: 0
+  responseCount: 3
+  responses:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: O2W1
+  m_EditorClassIdentifier: 
+  title: 'What if something else is interfering? '
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: 5c0b9725c85f5384e93dfc2cbd7d6ecf, type: 3}
+  captions:
+  - What if something else is interfering? Not just the BioEngine.
+  - "I\u2019ve witnessed phenomenons lately\u2026 ones that could explain this.\r"
+  - "Phenomenons outside protocol\u2026 I used to dismiss them as feedback noise."
+  - "But lately\u2026 they\u2019re becoming clearer. Maybe\u2026 maybe something
+    is at play\r\r\n"
+  captionDelays:
+  - 4
+  - 4
+  - 5
+  - 6
+  expectedDuration: 18
+  canRespond: 0
+  canSkip: 0
+  responseDelay: 0
+  responseCount: 0
+  responses:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

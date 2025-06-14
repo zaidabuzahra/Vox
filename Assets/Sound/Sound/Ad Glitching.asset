@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: Ad Glitching
+  m_EditorClassIdentifier: 
+  title: Ad glitching
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: 54ef181676239e449a889e4d18111a1f, type: 3}
+  captions:
+  - "That ad\u2019s glitching. That\u2019s\u2026 unusual here.\r\n"
+  - "Mmm. Probably residual feedback from the Garden\u2019s biosphere. Happens sometimes.
+    Nothing worth worrying about.\r"
+  captionDelays:
+  - 3
+  - 8
+  expectedDuration: 12
+  canRespond: 0
+  canSkip: 0
+  responseDelay: 0
+  responseCount: 0
+  responses: []

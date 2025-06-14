@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: O1W1
+  m_EditorClassIdentifier: 
+  title: . Something is pulling more power than it should
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: 036a21a3f400ca54a9b18cee42d67c88, type: 3}
+  captions:
+  - Alaric, I think the anomalies here are starved and drained by the BioEngine.
+  - "Something is pulling more power than it should\u2026\r\n"
+  - "Hmm\u2026 that would explain the drain. But why would the BioEngine reroute
+    that much energy?"
+  - " Unless\u2026 no.. never mind  we have to check the uplink console at the lab."
+  - "If something\u2019s rewriting priorities or causing any issues it\u2019ll show
+    up there.\r\n"
+  captionDelays:
+  - 6
+  - 3
+  - 6
+  - 8
+  - 6
+  expectedDuration: 29
+  canRespond: 0
+  canSkip: 0
+  responseDelay: 0
+  responseCount: 0
+  responses:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

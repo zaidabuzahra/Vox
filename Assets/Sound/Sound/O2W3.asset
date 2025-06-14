@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: O2W3
+  m_EditorClassIdentifier: 
+  title: "We\u2019ve been here so long i am tired"
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: 08ef3fd51df732145a47db7464e5fe5e, type: 3}
+  captions:
+  - "We\u2019ve been here so long, Alaric. Loop after loop\u2026 fixing one thing
+    just to watch another fall apart. I\u2019m starting to get tired\u2026\r"
+  - 'Tired of what? The system? The work?
+
+'
+  - Tired of chasing balance we never reach. Tired of the loop. Of thinking the next
+    fix will make it whole again.
+  - "We don\u2019t stop just because it hurts. You think Eden Strand was built overnight?
+    We endured failures, setbacks. "
+  - 'We built this because the world needed a new foundation.
+
+'
+  - "Failures, yes. But this feels different. Like the system wants to break, no
+    matter what we do. became a maze. Every solution just opens another corridor\r"
+  - "I know. But there\u2019s a kind of comfort in the routine, isn\u2019t there?
+    Even the pain it\u2019s familiar. We tell ourselves: maybe the next loop will
+    be different.\r"
+  - 'It never is.
+
+'
+  - "No\u2026 I believe we still can. It was beautiful once, wasn\u2019t it? The
+    idea that we could build something perfect\u2026something that would never collapse."
+  - "Something that could carry us forward forever. We can't stop now. Not when we\u2019re
+    this close.\r\n\r\n"
+  - ahh then lets go one more time maybe this time we will finally understand
+  captionDelays:
+  - 8.7
+  - 4
+  - 9
+  - 8
+  - 3
+  - 10
+  - 10
+  - 3
+  - 10
+  - 7.5
+  - 6.5
+  expectedDuration: 81
+  canRespond: 0
+  canSkip: 0
+  responseDelay: 0
+  responseCount: 0
+  responses: []

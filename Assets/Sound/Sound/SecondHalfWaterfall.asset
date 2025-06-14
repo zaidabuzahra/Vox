@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
+  m_Name: SecondHalfWaterfall
+  m_EditorClassIdentifier: 
+  title: SecondHalfWaterfall
+  activationType: 0
+  priority: 0
+  dialogueClip: {fileID: 8300000, guid: f3470b3570afeac489059fdfb2c01bbf, type: 3}
+  captions:
+  - "There\u2019s interference everywhere. Bioelectric surges\u2026 visual distortions
+    the entire region is folding in on itself\r"
+  - "This isn\u2019t just overflow. Something\u2019s inside the system now.\r\n\r"
+  captionDelays:
+  - 7
+  - 5
+  expectedDuration: 13
+  canRespond: 1
+  canSkip: 0
+  responseDelay: 0
+  responseCount: 2
+  responses:
+  - {fileID: 11400000, guid: d4c54d4512733d04985fb58cd2f5f3a3, type: 2}
+  - {fileID: 11400000, guid: a064db1e075346b4f8ea5d24d632c9c2, type: 2}
