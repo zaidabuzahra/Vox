@@ -5,6 +5,7 @@ using UnityEditor;
 
 public class Node : MonoBehaviour
 {
+#if UNITY_EDITOR
     [CustomEditor(typeof(Node))]
     public class ColliderCreatorEditor : Editor
     {
@@ -21,6 +22,7 @@ public class Node : MonoBehaviour
             DrawDefaultInspector();
         }
     }
+#endif
     public enum Direction { Up, Right, Down, Left }
 
     [Header("Connections")]
