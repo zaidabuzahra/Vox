@@ -51,13 +51,19 @@ MonoBehaviour:
   utilityIcon: {fileID: 0}
   animator: {fileID: 6872942913265802392}
   isActive: 0
-  stopUtility: 0
+  stopUtility: 1
   utilityCharge: 0
-  holdArea: {fileID: 2114744777647535024}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 128
   heldObject: {fileID: 0}
   heldObjectRb: {fileID: 0}
-  pickUpDistance: 80
+  pickUpDistance: 50
   pickUpForce: 150
+  minHoldDistance: 5
+  maxHoldDistance: 15
+  scrollSpeed: 10
+  followSpeed: 5
 --- !u!1 &3385398722815974716
 GameObject:
   m_ObjectHideFlags: 0
@@ -83,7 +89,7 @@ Transform:
   m_GameObject: {fileID: 3385398722815974716}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.112, z: 3.949}
+  m_LocalPosition: {x: 0, y: 0.112, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

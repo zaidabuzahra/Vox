@@ -6,12 +6,39 @@ using UnityEngine.Events;
 public class UVLightUtility : IUtility
 {
     // Utility methods
-    [SerializeField] public GameObject uvLight;
+    public GameObject uvLight;
     [SerializeField] private Material liquidMaterial;
+    [SerializeField] private Transform uvLightRayPos;
+    [SerializeField] private float pickUpDistance = 5f;
+    Vector3 hitGO;
+    private Camera _cam;
+
+    private void Start()
+    {
+        _cam = Camera.main;
+    }
 
     private void Update()
     {
-        liquidMaterial.SetFloat("_Energy", utilityCharge);
+        if (!isActive) return;
+        Vector3 rayOrigin = new(0.5f, 0.5f, 0f);
+
+        // actual Ray
+        Ray ray = _cam.ViewportPointToRay(rayOrigin);
+
+        if (Physics.Raycast(ray, out RaycastHit hit, pickUpDistance))
+        {
+            Collider[] colliders = Physics.OverlapSphere(hit.point, 0.1f);
+            foreach (Collider c in colliders)
+            {
+                if (c.gameObject.CompareTag("Gravity") && isActive)
+                {
+                    c.gameObject.GetComponent<PuzzleManager>().SolvePart();
+                    Debug.Log("Hit a UV scannable object");
+                }
+            }
+            hitGO = hit.point;
+        }
     }
     public override void UseUtility()
     {
@@ -37,5 +64,9 @@ public class UVLightUtility : IUtility
         isActive = false;
         animator.SetBool("PickUp", false);
         uvLight.SetActive(false);
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(hitGO, 0.1f);
     }
 }

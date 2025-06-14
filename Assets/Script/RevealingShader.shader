@@ -15,6 +15,8 @@ Shader "Custom/RevealUnderLight_URP_WithEdges"
         _Strength("Strength", Float) = 50
         _Sections ("Sections", Range(0, 10)) = 0
         _Speed ("Speed", Range(0, 10)) = 0
+        _DissolveAmount ("Dissolve Amount", Range(0,1)) = 0
+        _DissolveTexture ("Dissolve Noise Texture", 2D) = "white" {}
     }
 
     SubShader
@@ -51,6 +53,9 @@ Shader "Custom/RevealUnderLight_URP_WithEdges"
             float _Metal;
             float _Sections;
             float _Speed;
+            float _DissolveAmount;
+            TEXTURE2D(_DissolveTexture);
+            SAMPLER(sampler_DissolveTexture);
 
             struct Attributes
             {
@@ -78,35 +83,41 @@ Shader "Custom/RevealUnderLight_URP_WithEdges"
             }
 
             half4 frag(Varyings i) : SV_Target
-            {
-                float4 albedo = _HidenColor * SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap, i.uv);
-            
-                // Compute light-based reveal strength
-                float3 direction = normalize(_LightPos.xyz - i.worldPos);
-                float scale = dot(direction, _LightDir.xyz);
-                float strength = scale - cos(_Angle * (3.14 / 360.0));
-                strength = saturate(strength * _Strength);
-            
-                // Stripe effect only for hidden areas
-                float stripeMask = clamp(abs(tan((i.uv.x + _Time.x * _Speed) * _Sections)), 0, 1);
-            
-                // Final color blending
-                float3 hiddenColor = _Color.rgb * stripeMask;
-                float hiddenAlpha = _Color.a * stripeMask;
-            
-                float3 finalColor = lerp(albedo.rgb, hiddenColor, strength);
-                float finalAlpha = lerp(albedo.a, hiddenAlpha, strength);
-                
-                // Edge detection based on normal facing
-                float3 viewDir = normalize(_WorldSpaceCameraPos - i.worldPos);
-                float edge = 1 - abs(dot(i.worldNormal, viewDir));
-                edge = smoothstep(1 - _EdgeWidth, 1.0, edge);
-                
-                // Combine edge with final color
-                finalColor = lerp(finalColor, _EdgeColor.rgb, edge * _EdgeColor.a);
-                
-                return half4(finalColor, finalAlpha);
-            }
+{
+    // Dissolve effect
+    float dissolveValue = SAMPLE_TEXTURE2D(_DissolveTexture, sampler_DissolveTexture, i.uv).r;
+    if (dissolveValue < _DissolveAmount)
+        discard;
+
+    float4 albedo = _HidenColor * SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap, i.uv);
+
+    // Compute light-based reveal strength
+    float3 direction = normalize(_LightPos.xyz - i.worldPos);
+    float scale = dot(direction, _LightDir.xyz);
+    float strength = scale - cos(_Angle * (3.14 / 360.0));
+    strength = saturate(strength * _Strength);
+
+    // Stripe effect only for hidden areas
+    float stripeMask = clamp(abs(tan((i.uv.x + _Time.x * _Speed) * _Sections)), 0, 1);
+
+    // Final color blending
+    float3 hiddenColor = _Color.rgb * stripeMask;
+    float hiddenAlpha = _Color.a * stripeMask;
+
+    float3 finalColor = lerp(albedo.rgb, hiddenColor, strength);
+    float finalAlpha = lerp(albedo.a, hiddenAlpha, strength);
+
+    // Edge detection based on normal facing
+    float3 viewDir = normalize(_WorldSpaceCameraPos - i.worldPos);
+    float edge = 1 - abs(dot(i.worldNormal, viewDir));
+    edge = smoothstep(1 - _EdgeWidth, 1.0, edge);
+
+    // Combine edge with final color
+    finalColor = lerp(finalColor, _EdgeColor.rgb, edge * _EdgeColor.a);
+
+    return half4(finalColor, finalAlpha);
+}
+
 
             ENDHLSL
         }
