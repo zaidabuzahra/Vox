@@ -61,7 +61,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DissolveTexture:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 5da9fff5b9bccd940a8bd1b8c62e5405, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -115,7 +115,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DissolveAmount: 0.99997306
+    - _DissolveAmount: 1
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EdgeWidth: 0.02

@@ -61,7 +61,7 @@ MonoBehaviour:
   pickUpDistance: 50
   pickUpForce: 150
   minHoldDistance: 5
-  maxHoldDistance: 15
+  maxHoldDistance: 30
   scrollSpeed: 10
   followSpeed: 5
 --- !u!1 &3385398722815974716

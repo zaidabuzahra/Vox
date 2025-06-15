@@ -26,7 +26,8 @@ MonoBehaviour:
   - 11
   expectedDuration: 20
   canRespond: 0
-  canSkip: 0
+  canSkip: 1
   responseDelay: 0
-  responseCount: 0
-  responses: []
+  responseCount: 1
+  responses:
+  - {fileID: 11400000, guid: 895e41b93de9b804c91c3cb4f5d12166, type: 2}

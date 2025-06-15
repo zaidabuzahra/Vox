@@ -23,8 +23,9 @@ MonoBehaviour:
   captionDelays:
   - 7
   expectedDuration: 7
-  canRespond: 0
-  canSkip: 0
+  canRespond: 1
+  canSkip: 1
   responseDelay: 0
-  responseCount: 0
-  responses: []
+  responseCount: 1
+  responses:
+  - {fileID: 11400000, guid: 3696f50d25899f548a3b7899228c1906, type: 2}

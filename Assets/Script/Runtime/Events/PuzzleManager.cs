@@ -12,6 +12,7 @@ public class PuzzleManager : MonoBehaviour
         if (currentPuzzleIndex == puzzleCount)
         {
             resolvedPuzzle.Invoke();
+            Debug.Log("PuzzleSolved");
         }
     }
     public void UnsolvePart()

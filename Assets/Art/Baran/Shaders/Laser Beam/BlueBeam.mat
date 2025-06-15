@@ -47,11 +47,11 @@ Material:
     m_Ints: []
     m_Floats:
     - _BlueValue: 0.1
-    - _EmmisionStrenght: 2.15
+    - _EmmisionStrenght: 15.03
     - _GreenValue: 0.04
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RedValue: 0
+    - _RedValue: 0.79
     m_Colors:
     - _MainSpeed: {r: -1.84, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
