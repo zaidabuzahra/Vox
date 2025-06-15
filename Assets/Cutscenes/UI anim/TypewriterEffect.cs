@@ -6,11 +6,12 @@ public class TypewriterEffect : MonoBehaviour
 {
     public TMP_Text textDisplay;
     public float typingSpeed = 0.05f;
+    public float endDelay = 0.05f;
 
     private Coroutine typingCoroutine;
     private string cachedInitialText;
 
-    private void Start()
+    private void OnEnable()
     {
         // Save whatever text is in the TMP field at start
         cachedInitialText = textDisplay.text;
@@ -35,5 +36,7 @@ public class TypewriterEffect : MonoBehaviour
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
+        yield return new WaitForSeconds(endDelay);
+        gameObject.SetActive(false);
     }
 }

@@ -10,21 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
-  m_Name: AfterDeadOlant
+  m_Name: AfterDeadPlant
   m_EditorClassIdentifier: 
   title: After Dead Plant
   activationType: 0
   priority: 1
   dialogueClip: {fileID: 8300000, guid: 8774d448cc869b241b18e81eea5e7853, type: 3}
   captions:
-  - "Photosynthesis down to twenty percent. Root conductivity has collapsed. These
-    plants are starving in full daylight.\r"
+  - Photosynthesis down to twenty percent. Root conductivity has collapsed. These
+    plants are starving in full daylight.
   captionDelays:
   - 7
   expectedDuration: 7
   canRespond: 1
   canSkip: 0
   responseDelay: 0
-  responseCount: 1
+  responseCount: 2
   responses:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 3fc044ba4af7776499e0fef8c543d75f, type: 2}
+  - {fileID: 11400000, guid: a056d929252078040b46d79377c0949b, type: 2}

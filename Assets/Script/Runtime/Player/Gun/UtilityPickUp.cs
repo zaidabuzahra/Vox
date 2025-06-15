@@ -5,6 +5,7 @@ namespace Runtime.Player.Gun
 {
     class UtilityPickUp : MonoBehaviour
     {
+        public bool isCutscene = true;
         [SerializeField] private GameObject utility;
         private GunManager gunManager;
         private void Start()
@@ -28,8 +29,11 @@ namespace Runtime.Player.Gun
         }
         private void OnEnable()
         {
-            PickUpUtility();
-            Destroy(this);
+            if (isCutscene)
+            {
+                PickUpUtility();
+                Destroy(this);
+            }
         }
     }
 }

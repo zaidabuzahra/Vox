@@ -56,11 +56,11 @@ LODGroup:
   - screenRelativeHeight: 0.20000002
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 1411056613796001739}
+    - renderer: {fileID: 2646956302753075520}
   - screenRelativeHeight: 0
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 7231392916377093551}
+    - renderer: {fileID: 2646956302753075520}
   m_Enabled: 1
 --- !u!1 &2551510482955192845
 GameObject:
@@ -78,7 +78,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1067291899839961621
 Transform:
   m_ObjectHideFlags: 0
@@ -157,7 +157,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6628308170872315588
 Transform:
   m_ObjectHideFlags: 0
@@ -260,6 +260,7 @@ GameObject:
   - component: {fileID: 2550643565643233004}
   - component: {fileID: 2646956302753075520}
   - component: {fileID: 6914100505993326075}
+  - component: {fileID: 6184184833761128835}
   m_Layer: 0
   m_Name: LOD_0
   m_TagString: Untagged
@@ -313,9 +314,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 21767323890257540}
-  - {fileID: 21410732371612564}
-  - {fileID: 21799859478429882}
+  - {fileID: 21993830125847146, guid: 6e92187b7f5500614b9ca0ab3b1812a0, type: 3}
+  - {fileID: 21894560909601986, guid: eba8e66cbe98e874f97ecf77638129b2, type: 3}
+  - {fileID: 21894560909601986, guid: eba8e66cbe98e874f97ecf77638129b2, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -357,6 +358,28 @@ MonoBehaviour:
   windQuality: 3
   localWindAmplitude: 0.32
   windMain: 1
+--- !u!64 &6184184833761128835
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6093115984850463245}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 43168897757303332}
 --- !u!21 &21361228854819306
 Material:
   serializedVersion: 8

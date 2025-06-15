@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6772376960964995457}
   - component: {fileID: 6874688826373396789}
   - component: {fileID: 8010074679545530515}
+  - component: {fileID: 150039781499498992}
   m_Layer: 0
   m_Name: LOD_0
   m_TagString: Untagged
@@ -65,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 21700578012469144}
+  - {fileID: 21993830125847146, guid: 6e92187b7f5500614b9ca0ab3b1812a0, type: 3}
   - {fileID: 21894560909601986}
   - {fileID: 21149489974708480}
   m_StaticBatchInfo:
@@ -109,6 +110,28 @@ MonoBehaviour:
   windQuality: 3
   localWindAmplitude: 0.32
   windMain: 1
+--- !u!64 &150039781499498992
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2868960127485273011}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 43839059389596038}
 --- !u!1 &3244553707286072786
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,11 +188,11 @@ LODGroup:
   - screenRelativeHeight: 0.20000002
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 6288887402568306361}
+    - renderer: {fileID: 6874688826373396789}
   - screenRelativeHeight: 0
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 6069601943732506569}
+    - renderer: {fileID: 6874688826373396789}
   m_Enabled: 1
 --- !u!1 &4455812864711409743
 GameObject:
@@ -189,7 +212,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2741730170073517329
 Transform:
   m_ObjectHideFlags: 0
@@ -296,7 +319,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8048609436251951155
 Transform:
   m_ObjectHideFlags: 0
