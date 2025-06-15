@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: AfterUIPuzleLab
   activationType: 0
-  priority: 0
+  priority: 1
   dialogueClip: {fileID: 8300000, guid: e2dc35c51219c2d43919288df26a604f, type: 3}
   captions:
   - "Sector 3\u2019s showing\u2026 rapid overgrowth. Plant DNA\u2019s mutating. No

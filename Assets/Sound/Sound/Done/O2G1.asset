@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: "\u2019m still grateful to be here with you, Alaric."
   activationType: 0
-  priority: 0
+  priority: 1
   dialogueClip: {fileID: 8300000, guid: b669cd7581e4ab84c9403a4fb66b1527, type: 3}
   captions:
   - "With everything breaking down\u2026 I\u2019m still grateful to be here with

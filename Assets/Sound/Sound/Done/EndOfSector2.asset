@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Sevvere bioelectric
   activationType: 0
-  priority: 0
+  priority: 1
   dialogueClip: {fileID: 8300000, guid: 50045bfb366f1e641984836fd365dc58, type: 3}
   captions:
   - "Alaric\u2026 I\u2019m getting severe bioelectric spikes.\r\nRoot systems here

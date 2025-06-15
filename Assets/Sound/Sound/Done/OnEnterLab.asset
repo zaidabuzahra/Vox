@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: OnEnterLab
   activationType: 0
-  priority: 0
+  priority: 1
   dialogueClip: {fileID: 8300000, guid: 7f9e72b8edcb78d4ab96bc45e69435b4, type: 3}
   captions:
   - "Let\u2019s begin. We\u2019ll start by verifying the uplink flow. The BioEngine\u2019s

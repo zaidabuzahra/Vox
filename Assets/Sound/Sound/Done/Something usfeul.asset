@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Something usfeul
   activationType: 0
   priority: 0
-  dialogueClip: {fileID: 8300000, guid: 84b40ee3ff91bf749bf3dc26d54de560, type: 3}
+  dialogueClip: {fileID: 8300000, guid: bdcb9289fa830894394d1ec73b7d8384, type: 3}
   captions:
   - "Orion lets start investigating this area maybe we can find something. \r\n"
   captionDelays:

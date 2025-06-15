@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: what if the bioengine rebelled
   activationType: 0
-  priority: 0
+  priority: 1
   dialogueClip: {fileID: 8300000, guid: a7a6e87971ca63a42b780357980a7ef2, type: 3}
   captions:
   - "We forced it to be perfect\u2026 of course it rebelled.\r"

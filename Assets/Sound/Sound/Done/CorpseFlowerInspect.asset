@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Sevvere bioelectric
   activationType: 0
-  priority: 0
+  priority: 1
   dialogueClip: {fileID: 8300000, guid: a9decc79fb5214545be8ed4e71e03ac1, type: 3}
   captions:
   - "It\u2019s not feeding the system, it\u2019s draining it. Every plant around

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: "once all this is behind us, let\u2019s set a campfire"
   activationType: 0
-  priority: 0
+  priority: 1
   dialogueClip: {fileID: 8300000, guid: f6750fc91d5797b409dac99d0bf42e84, type: 3}
   captions:
   - "indeed\u2026 once all this is behind us, let\u2019s set a campfire near the

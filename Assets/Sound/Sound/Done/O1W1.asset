@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: . Something is pulling more power than it should
   activationType: 0
-  priority: 0
+  priority: 1
   dialogueClip: {fileID: 8300000, guid: 036a21a3f400ca54a9b18cee42d67c88, type: 3}
   captions:
   - Alaric, I think the anomalies here are starved and drained by the BioEngine.

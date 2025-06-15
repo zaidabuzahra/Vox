@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Sevvere bioelectric
   activationType: 0
-  priority: 0
+  priority: 1
   dialogueClip: {fileID: 8300000, guid: e0a26e67eed64364c979a2be564b1c25, type: 3}
   captions:
   - "This isn\u2019t random\u2026 it\u2019s adapting to something.\r"

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 'What if something else is interfering? '
   activationType: 0
-  priority: 0
+  priority: 1
   dialogueClip: {fileID: 8300000, guid: 5c0b9725c85f5384e93dfc2cbd7d6ecf, type: 3}
   captions:
   - What if something else is interfering? Not just the BioEngine.

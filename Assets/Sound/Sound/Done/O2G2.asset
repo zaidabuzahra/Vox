@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Something must corrupted the bioegnine
   activationType: 0
-  priority: 0
+  priority: 1
   dialogueClip: {fileID: 8300000, guid: d92ad029c1b54fa4aa3a3a2920097521, type: 3}
   captions:
   - "Perfect systems don\u2019t mutate. Something corrupted it.\r"
