@@ -17,6 +17,7 @@ public class TriggerInteractable : MonoBehaviour
     {
         interactionEvent?.Invoke();
         UIManager.Instance.HideInteractBox();
+        InputSignals.Instance.OnInputInteractPressed = null;
         Destroy(this);
     }
 
