@@ -12,6 +12,7 @@ public class DialogueTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Request();
+            Destroy(this);
         }
     }
     public void Request()

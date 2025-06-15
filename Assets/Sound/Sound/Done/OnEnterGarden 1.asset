@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: 
   activationType: 0
-  priority: 0
+  priority: 1
   dialogueClip: {fileID: 8300000, guid: ac46c5d8786e8fc459c98775cc923b40, type: 3}
   captions:
   - Ahh... this never gets old, does it, Orion?

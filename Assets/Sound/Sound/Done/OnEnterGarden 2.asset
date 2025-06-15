@@ -10,28 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41413864fb687cc40bcd998960ae9502, type: 3}
-  m_Name: AfterConsole 1
+  m_Name: OnEnterGarden 2
   m_EditorClassIdentifier: 
-  title: AfterConsole
+  title: 
   activationType: 0
   priority: 1
-  dialogueClip: {fileID: 8300000, guid: 4d6f18e3b7fc3b847aa13803a830614b, type: 3}
+  dialogueClip: {fileID: 8300000, guid: ac46c5d8786e8fc459c98775cc923b40, type: 3}
   captions:
-  - The Perfect Garden.
-  - "That\u2019s where the signal\u2019s breaking? But it\u2019s always been the
-    most stable zone.\r\n"
-  - "It was our masterpiece. The first to bloom.But perfection is a fragile thing\u2026
-    and I fear we may have pushed it too far.\r"
+  - Ahh... this never gets old, does it, Orion?
   captionDelays:
-  - 1
-  - 5
-  - 8
-  expectedDuration: 14
+  - 3
+  expectedDuration: 3
   canRespond: 0
   canSkip: 0
   responseDelay: 0
   responseCount: 0
-  responses:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  responses: []

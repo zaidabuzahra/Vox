@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -21,4 +22,6 @@ public class InputSignals : MonoSingleton<InputSignals>
     
     
     public UnityAction<GameObject> PickUp = delegate { };
+    public UnityAction OnInputSprintPressed = delegate { };
+    public UnityAction OnInputSprintCancelled = delegate { };
 }

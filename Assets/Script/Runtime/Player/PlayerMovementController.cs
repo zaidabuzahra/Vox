@@ -70,12 +70,25 @@ public class PlayerMovementController : MonoBehaviour
     {
         InputSignals.Instance.OnInputMoveUpdate += MovementInputUpdate;
         InputSignals.Instance.OnInputeLookUpdate += LookInputUpdate;
+        InputSignals.Instance.OnInputSprintPressed += Sprint;
+        InputSignals.Instance.OnInputSprintCancelled += StopSprinting;
+    }
+
+    private void Sprint()
+    {
+        speed = 12f;
+    }
+    private void StopSprinting()
+    {
+        speed = 8f;
     }
     private void OnDisable()
     {
         if (InputSignals.Instance == null) { return; }
         InputSignals.Instance.OnInputMoveUpdate -= MovementInputUpdate;
-        InputSignals.Instance.OnInputeLookUpdate -= LookInputUpdate;
+        InputSignals.Instance.OnInputeLookUpdate -= LookInputUpdate; 
+        InputSignals.Instance.OnInputSprintPressed -= Sprint;
+        InputSignals.Instance.OnInputSprintCancelled -= StopSprinting;
     }
     private void MovementInputUpdate(Vector2 data)
     {

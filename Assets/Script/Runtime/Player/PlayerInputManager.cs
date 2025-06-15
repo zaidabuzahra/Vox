@@ -55,4 +55,9 @@ public class PlayerInputManager : MonoBehaviour
     {
         if (context.performed) { InputSignals.Instance.OnInputJumpPressed?.Invoke(); }
     }
+    public void OnInputSprintPressed(InputAction.CallbackContext context)
+    {
+        if (context.performed) { InputSignals.Instance.OnInputSprintPressed?.Invoke(); }
+        if (context.canceled) { InputSignals.Instance.OnInputSprintCancelled?.Invoke(); }
+    }
 }

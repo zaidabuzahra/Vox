@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Roots
   activationType: 0
-  priority: 0
+  priority: 1
   dialogueClip: {fileID: 8300000, guid: 0a345b1ad9b106d449ebe00e0c31664b, type: 3}
   captions:
   - "hmmm it appears that roots have spread to the waterfall which is in fact a good
