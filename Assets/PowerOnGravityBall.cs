@@ -1,7 +1,5 @@
 using DG.Tweening;
 using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEngine.UI.Extensions.ColorPicker;
 
 public class PowerOnGravityBall : MonoBehaviour
 {
